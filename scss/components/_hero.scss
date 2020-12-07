@@ -1,0 +1,14 @@
+/* ============================================= */
+/*        Hero Layout                            */
+/* ============================================= */
+
+.hero {
+    background-color: $brand-color-secondary;
+    h2,
+    h3 {
+        color: $brand-color-primary;
+    }
+    .txt-accent {
+        color: $accent-color;
+    }
+}

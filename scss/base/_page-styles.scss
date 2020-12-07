@@ -2,6 +2,10 @@
 /*        General Page Layout                    */
 /* ============================================= */
 
+body {
+    background-color: $brand-color-primary;
+}
+
 .page-wrapper {
     width: 95%;
     max-width: 1024px;
