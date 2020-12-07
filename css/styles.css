@@ -384,14 +384,13 @@ a {
 /* ============================================= */
 /*              Typography                       */
 /* ============================================= */
-.headline-primary {
-  color: #2D4050;
-  margin-left: 10px;
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
 }
 
-.headline-secondary {
-  font-weight: 300;
-  color: #fff;
+h3 {
+  font-weight: 600;
 }
 
 /* ============================================= */
@@ -428,9 +427,28 @@ nav {
 }
 .hero h2 {
   margin-top: 0;
+  margin-bottom: 0;
+}
+.hero h3 {
+  width: 20ch;
 }
 .hero .txt-accent {
   color: #EA5455;
+}
+
+/* ============================================= */
+/*        Lead-in Secton Layout                  */
+/* ============================================= */
+.lead-in p {
+  font-size: 0.75em;
+  text-align: center;
+}
+
+.lead-in-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

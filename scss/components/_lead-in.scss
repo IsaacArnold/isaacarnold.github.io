@@ -1,0 +1,17 @@
+/* ============================================= */
+/*        Lead-in Secton Layout                  */
+/* ============================================= */
+
+.lead-in {
+    p {
+        font-size: .75em;
+        text-align: center;
+    }
+}
+
+.lead-in-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}

@@ -2,31 +2,30 @@
 /*              Base styles                      */
 /* ============================================= */
 
-* {
-    font-family: 'Montserrat', sans-serif;
-    color: $primary-text-color;
-    box-sizing: border-box;
-  }
+  * {
+      font-family: 'Montserrat', sans-serif;
+      color: $primary-text-color;
+      box-sizing: border-box;
+    }
+    
+    p {
+      line-height: 1.45em;
+    }
+    
+    a {
+      text-decoration: none;
+    }
   
-  p {
-    line-height: 1.45em;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  
+
   /* ============================================= */
   /*              Typography                       */
   /* ============================================= */
-  
-  .headline-primary {
-    color: $brand-color-primary;
-    margin-left: 10px;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
   }
-  
-  .headline-secondary {
-    font-weight: 300;
-    color: $primary-text-color;
+
+  h3 {
+    font-weight: 600;
   }
