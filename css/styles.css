@@ -422,7 +422,6 @@ nav {
 /*        Hero Layout                            */
 /* ============================================= */
 .hero-wrapper {
-  height: 70vh;
   display: flex;
   flex-direction: column;
 }
@@ -528,6 +527,18 @@ nav {
 .contact .content-wrapper {
   padding-left: 10px;
   padding-right: 10px;
+}
+.contact .cta-btn {
+  margin-bottom: 16px;
+}
+
+/* ============================================= */
+/*        Footer Layout                          */
+/* ============================================= */
+footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
