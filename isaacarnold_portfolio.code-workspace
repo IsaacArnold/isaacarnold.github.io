@@ -6,5 +6,8 @@
         {
             "path": "../../treehouse-project-files/project-seven"
         }
-    ]
+    ],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "portfolio-site"
+    }
 }
