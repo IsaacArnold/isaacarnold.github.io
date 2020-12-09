@@ -2,6 +2,10 @@
 /*        General Page Layout                    */
 /* ============================================= */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: $brand-color-primary;
 }
