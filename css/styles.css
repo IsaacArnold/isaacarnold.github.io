@@ -409,7 +409,6 @@ h4 {
 /* ============================================= */
 nav {
   width: 100%;
-  height: 62px;
 }
 
 .nav {
@@ -422,13 +421,12 @@ nav {
 /*        Hero Layout                            */
 /* ============================================= */
 .hero-wrapper {
-  height: 100vh;
+  height: calc(100vh - 55px);
   display: flex;
   flex-direction: column;
 }
 
 .hero {
-  position: relative;
   background-color: #E5E5E5;
   padding: 30px 0;
   flex-grow: 1;
@@ -447,6 +445,9 @@ nav {
 .hero .txt-accent {
   color: #EA5455;
 }
+.hero .content-wrapper {
+  position: relative;
+}
 
 .cta-btn {
   padding: 15px 20px;
@@ -457,8 +458,8 @@ nav {
 
 .hero-image {
   position: absolute;
-  right: -25px;
-  bottom: 0;
+  right: 0px;
+  bottom: -140px;
   height: 250px;
   width: auto;
 }
@@ -472,8 +473,7 @@ nav {
 /*        Lead-in Secton Layout                  */
 /* ============================================= */
 .lead-in {
-  display: flex;
-  flex-grow: 1;
+  padding-top: 10px;
 }
 .lead-in p {
   text-align: center;
