@@ -4,7 +4,9 @@
 
 .lead-in {
     // margin-top: auto;
-    // padding-bottom: 50px;
+    // margin-bottom: 50px;
+    display: flex;
+    flex-grow: 1;
     p {
         text-align: center;
         margin-bottom: 0;

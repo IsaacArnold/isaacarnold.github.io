@@ -422,6 +422,7 @@ nav {
 /*        Hero Layout                            */
 /* ============================================= */
 .hero-wrapper {
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -430,6 +431,7 @@ nav {
   position: relative;
   background-color: #E5E5E5;
   padding: 30px 0;
+  flex-grow: 1;
 }
 .hero h2,
 .hero h3 {
@@ -460,10 +462,19 @@ nav {
   height: 250px;
   width: auto;
 }
+@media (max-height: 613px) {
+  .hero-image {
+    display: none;
+  }
+}
 
 /* ============================================= */
 /*        Lead-in Secton Layout                  */
 /* ============================================= */
+.lead-in {
+  display: flex;
+  flex-grow: 1;
+}
 .lead-in p {
   text-align: center;
   margin-bottom: 0;
