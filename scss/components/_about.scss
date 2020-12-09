@@ -1,0 +1,19 @@
+/* ============================================= */
+/*        About Secton Layout                    */
+/* ============================================= */
+
+.about {
+    background-color: $brand-color-secondary;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    h4,
+    p {
+        color: $brand-color-primary;
+    }
+    .content-wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

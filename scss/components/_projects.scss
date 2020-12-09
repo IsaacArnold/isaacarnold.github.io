@@ -1,0 +1,15 @@
+/* ============================================= */
+/*        Projects Secton Layout                 */
+/* ============================================= */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+
+    .content-wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

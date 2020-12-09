@@ -397,6 +397,10 @@ h3 {
   font-weight: 600;
 }
 
+h4 {
+  margin-top: 16px;
+}
+
 /* ============================================= */
 /*              Media Queries                    */
 /* ============================================= */
@@ -472,6 +476,58 @@ nav {
   flex-direction: column;
   align-items: center;
   align-content: center;
+}
+
+/* ============================================= */
+/*        About Secton Layout                    */
+/* ============================================= */
+.about {
+  background-color: #E5E5E5;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+.about h4,
+.about p {
+  color: #2D4050;
+}
+.about .content-wrapper {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* ============================================= */
+/*        Projects Secton Layout                 */
+/* ============================================= */
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+.projects .content-wrapper {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* ============================================= */
+/*        Contact Secton Layout                  */
+/* ============================================= */
+.contact {
+  background-color: #E5E5E5;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+.contact h4,
+.contact p {
+  color: #2D4050;
+}
+.contact .content-wrapper {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
