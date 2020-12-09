@@ -418,7 +418,7 @@ nav {
 /*        Hero Layout                            */
 /* ============================================= */
 .hero-wrapper {
-  height: 100vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
 }
@@ -461,10 +461,6 @@ nav {
 /* ============================================= */
 /*        Lead-in Secton Layout                  */
 /* ============================================= */
-.lead-in {
-  margin-top: auto;
-  padding-bottom: 50px;
-}
 .lead-in p {
   font-size: 0.75em;
   text-align: center;
