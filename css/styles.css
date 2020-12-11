@@ -404,7 +404,7 @@ h4 {
 
 h5 {
   color: #2D4050;
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 0;
 }
 
@@ -544,6 +544,7 @@ nav {
   justify-content: center;
   margin: auto;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .project-image {
@@ -554,13 +555,20 @@ nav {
 }
 
 .project-card {
-  height: 300px;
+  height: 400px;
   background-color: lightgray;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-content: center;
   border-radius: 10px;
+}
+
+.project-text {
+  padding: 0 10px;
+}
+.project-text p {
+  font-size: 14px;
 }
 
 /* ============================================= */

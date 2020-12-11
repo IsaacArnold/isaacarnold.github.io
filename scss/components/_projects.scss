@@ -22,6 +22,7 @@
     justify-content: center;
     margin: auto;
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .project-image {
@@ -32,11 +33,18 @@
 }
 
 .project-card {
-    height: 300px;
+    height: 400px;
     background-color: lightgray;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-content: center;
     border-radius: 10px;
+}
+
+.project-text {
+    padding: 0 10px;
+    p {
+        font-size: 14px;
+    }
 }
