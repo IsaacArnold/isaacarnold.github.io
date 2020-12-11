@@ -402,6 +402,12 @@ h4 {
   font-size: 20px;
 }
 
+h5 {
+  color: #2D4050;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
 .txt-accent {
   color: #EA5455;
 }
@@ -531,6 +537,7 @@ nav {
 }
 
 .project-grid-container {
+  max-width: 700px;
   display: grid;
   grid-template-columns: repeat(auto-fit, 220px);
   grid-gap: 20px;
@@ -540,9 +547,10 @@ nav {
 }
 
 .project-image {
-  background-color: white;
+  background-color: #fff;
   height: 150px;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .project-card {

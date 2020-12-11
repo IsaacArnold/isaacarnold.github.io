@@ -15,6 +15,7 @@
 }
 
 .project-grid-container {
+    max-width: 700px;
     display: grid;
     grid-template-columns: repeat(auto-fit, 220px);
     grid-gap: 20px;
@@ -24,9 +25,10 @@
 }
 
 .project-image {
-    background-color: white;
+    background-color: #fff;
     height: 150px;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .project-card {
