@@ -8,12 +8,15 @@
     flex-direction: column;
     align-content: center;
     text-align: center;
+    padding-bottom: 30px;
     h4,
     p {
         color: $brand-color-primary;
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
     .content-wrapper {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding: 0 10px;
     }
 }

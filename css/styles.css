@@ -398,7 +398,12 @@ h3 {
 }
 
 h4 {
-  margin-top: 16px;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.txt-accent {
+  color: #EA5455;
 }
 
 /* ============================================= */
@@ -443,9 +448,6 @@ nav {
 .hero h3 {
   width: 20ch;
 }
-.hero .txt-accent {
-  color: #EA5455;
-}
 .hero .content-wrapper {
   position: relative;
 }
@@ -459,10 +461,15 @@ nav {
 
 .hero-image {
   position: absolute;
-  right: -10px;
+  right: 0px;
   bottom: 0px;
   height: 40vh;
   width: auto;
+}
+@media (max-height: 517px) {
+  .hero-image {
+    display: none;
+  }
 }
 
 /* ============================================= */
@@ -474,6 +481,9 @@ nav {
 .lead-in p {
   text-align: center;
   margin-bottom: 0;
+}
+.lead-in .content-wrapper {
+  padding: 0 10px;
 }
 
 .lead-in-div {
@@ -492,14 +502,18 @@ nav {
   flex-direction: column;
   align-content: center;
   text-align: center;
+  padding-bottom: 30px;
 }
 .about h4,
 .about p {
   color: #2D4050;
 }
+.about h4:last-child,
+.about p:last-child {
+  margin-bottom: 0;
+}
 .about .content-wrapper {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0 10px;
 }
 
 /* ============================================= */

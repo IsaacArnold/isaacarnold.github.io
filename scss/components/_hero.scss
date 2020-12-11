@@ -25,9 +25,6 @@
     h3 {
         width: 20ch;
     }
-    .txt-accent {
-        color: $accent-color;
-    }
     .content-wrapper {
         position: relative;
     }
@@ -42,11 +39,11 @@
 
 .hero-image {
     position: absolute;
-    right: -10px;
+    right: 0px;
     bottom: 0px;
     height: 40vh;
     width: auto;
-    // @media (max-height: 613px) {
-    //     display: none;
-    // }
+    @media (max-height: 517px) {
+        display: none;
+    }
 }
