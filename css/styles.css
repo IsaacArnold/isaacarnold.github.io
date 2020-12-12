@@ -595,7 +595,10 @@ nav {
   padding-right: 10px;
 }
 .contact .cta-btn {
-  margin-bottom: 16px;
+  margin: 16px 0;
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
 }
 
 .social-icons {
