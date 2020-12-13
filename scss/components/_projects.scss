@@ -27,9 +27,13 @@
 
 .project-image {
     background-color: #fff;
-    height: 150px;
+    height: 140px;
     border-radius: 10px;
     overflow: hidden;
+}
+
+img {
+    height: 100%;
 }
 
 .project-card {
@@ -40,6 +44,9 @@
     text-align: center;
     align-content: center;
     border-radius: 10px;
+    p {
+        color: $brand-color-primary;
+    }
 }
 
 .project-text {

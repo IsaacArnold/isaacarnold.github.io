@@ -549,9 +549,13 @@ nav {
 
 .project-image {
   background-color: #fff;
-  height: 150px;
+  height: 140px;
   border-radius: 10px;
   overflow: hidden;
+}
+
+img {
+  height: 100%;
 }
 
 .project-card {
@@ -562,6 +566,9 @@ nav {
   text-align: center;
   align-content: center;
   border-radius: 10px;
+}
+.project-card p {
+  color: #2D4050;
 }
 
 .project-text {
@@ -590,6 +597,9 @@ nav {
 .contact p {
   color: #2D4050;
 }
+.contact h4 {
+  margin-bottom: 30px;
+}
 .contact .content-wrapper {
   padding-left: 10px;
   padding-right: 10px;
@@ -603,9 +613,15 @@ nav {
 
 .social-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-content: center;
   margin: 30px 0;
+}
+.social-icons a {
+  margin-left: 20px;
+}
+.social-icons #first {
+  margin-left: 0;
 }
 
 /* ============================================= */
