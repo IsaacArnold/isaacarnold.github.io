@@ -24,7 +24,7 @@ body {
 
 .content-wrapper {
   width: 95%;
-  max-width: 100%;
+  max-width: 1440px;
   margin: auto;
 }
 
@@ -427,7 +427,7 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .nav .laptop-nav {
     display: none;
   }
