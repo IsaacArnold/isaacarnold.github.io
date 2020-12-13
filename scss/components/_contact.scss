@@ -17,8 +17,9 @@
     }
     p {
         @media (min-width: 768px) {
-            width: 70ch;
-            margin: 16px auto;
+            max-width: 60ch;
+            margin: auto;
+            margin-bottom: 16px;
         }
     }
     .content-wrapper {

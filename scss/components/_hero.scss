@@ -35,6 +35,11 @@
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     border: none;
+    @media (min-width: 768px) {
+        width: 200px;
+        height: 60px;
+        font-size: 18px;
+    }
 }
 
 .hero-image {
@@ -47,6 +52,6 @@
         display: none;
     }
     @media (min-width: 768px) {
-        height: 60vh;
+        height: 55vh;
     }
 }
