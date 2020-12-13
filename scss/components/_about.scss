@@ -18,5 +18,8 @@
     }
     .content-wrapper {
         padding: 0 10px;
+        @media (min-width: 1024px) {
+            width: 70ch;
+        }
     }
 }

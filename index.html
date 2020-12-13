@@ -15,6 +15,13 @@
             <div class="content-wrapper nav"> <!-- Nav content -->
                 <p>Isaac Arnold</p>
                 <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                <div class="laptop-nav">
+                    <ul class="nav-list">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div> <!-- /Nav content -->
         </nav> <!-- /Nav section -->
         <div class="hero-wrapper"> <!-- Hero and lead-in wrapper -->
@@ -31,13 +38,15 @@
             <section class="lead-in"> <!-- Lead-in section -->
                 <div class="content-wrapper lead-in-div"> <!-- Content-wrapper - Lead-in -->
                     <p>Find out a little more about me, my recent projects and how you can get in touch!</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="77" height="77" viewBox="0 0 24 24" fill="none" stroke="#EA5455" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    <a href="#about">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="77" height="77" viewBox="0 0 24 24" fill="none" stroke="#EA5455" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </a>
                 </div> <!-- /Content-wrapper - Lead-in -->
             </section> <!--/Lead-in section -->
         </div> <!-- /Hero and lead-in wrapper -->
     </header> <!-- /Header section -->
     <main> <!-- Main content section -->
-        <section class="about"> <!-- About section -->
+        <section class="about" id="about"> <!-- About section -->
             <div class="content-wrapper">
                 <h4>About Me</h4>
                 <p>Hi - I'm Isaac, a <span class="txt-accent">self-taught</span> front end web developer currently residing in New Zealand.</p> 
@@ -46,7 +55,7 @@
                 <p>In my spare time, you'll often find me reading <span class="txt-accent">books</span>, playing <span class="txt-accent">video games</span> or enjoying the many <span class="txt-accent">sporting options</span> New Zealand has to offer. </p>
             </div> <!-- /Content-wrapper - About -->
         </section> <!-- /About section -->
-        <section class="projects"> <!-- Project section -->
+        <section class="projects" id="projects"> <!-- Project section -->
             <div class="content-wrapper">
                 <h4>Projects</h4>
                 <p>Check out what <span class="txt-accent">I've been working</span> on lately!</p>
@@ -223,7 +232,7 @@
                 </div> <!-- /Project grid container -->
             </div> <!-- /Content-wrapper - Projects -->
         </section> <!-- /Project section -->
-        <section class="contact"> <!-- Contact section -->
+        <section class="contact" id="contact"> <!-- Contact section -->
             <div class="content-wrapper">
                 <h4>Contact</h4>
                 <p>If you are looking for a <span class="txt-accent">Front-End Developer</span> or want to bring your <span class="txt-accent">ideas to life</span>, please don't hesitate to get in touch - I'd love to hear from you!</p>

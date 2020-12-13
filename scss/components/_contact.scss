@@ -15,6 +15,12 @@
     h4 {
         margin-bottom: 30px;
     }
+    p {
+        @media (min-width: 768px) {
+            width: 70ch;
+            margin: 16px auto;
+        }
+    }
     .content-wrapper {
         padding-left: 10px;
         padding-right: 10px;
@@ -38,6 +44,4 @@
     #first {
         margin-left: 0;
     }
-
-
 }
