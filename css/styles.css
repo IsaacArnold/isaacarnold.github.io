@@ -16,6 +16,7 @@ html {
 
 body {
   background-color: #2D4050;
+  position: relative;
 }
 
 .cta-btn {
@@ -457,6 +458,37 @@ nav {
 }
 .nav-list li {
   margin-left: 30px;
+}
+
+.overlay-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2D4050;
+  width: 100%;
+  height: 60vh;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+.overlay-nav .overlay-nav-ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.overlay-nav li {
+  list-style-type: none;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.overlay-nav svg {
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }
 
 /* ============================================= */
