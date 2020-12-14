@@ -445,10 +445,17 @@ nav {
   }
 }
 
+.hamburger {
+  cursor: pointer;
+}
 @media (min-width: 1024px) {
   .hamburger {
     display: none;
   }
+}
+
+.close {
+  cursor: pointer;
 }
 
 .nav-list {
@@ -458,6 +465,9 @@ nav {
 }
 .nav-list li {
   margin-left: 30px;
+}
+.nav-list li :hover {
+  color: #EA5455;
 }
 
 .overlay-nav {
@@ -484,6 +494,9 @@ nav {
   list-style-type: none;
   margin-bottom: 20px;
   font-size: 20px;
+}
+.overlay-nav li :hover {
+  color: #EA5455;
 }
 .overlay-nav svg {
   position: absolute;
