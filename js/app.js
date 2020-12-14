@@ -22,6 +22,5 @@ nav.addEventListener("click", (e) => {
 overlayNav.addEventListener("click", (e) => {
   if (e.target.classList == "close" || e.target.tagName === "A") {
     overlayNav.style.display = "none";
-    console.log("closed");
   }
 });
