@@ -7,6 +7,10 @@ const close = document.querySelector(".close");
 const nav = document.querySelector(".nav");
 const overlayNav = document.querySelector(".overlay-nav");
 
+/* ====================================
+Event Listeners
+=====================================*/
+
 // Listens for clicks in the main nav and shows the overlay if the item clicked is the hamburger menu icon
 nav.addEventListener("click", (e) => {
   if (e.target === hamburger) {

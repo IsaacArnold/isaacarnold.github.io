@@ -468,6 +468,7 @@ nav {
 }
 .nav-list li :hover {
   color: #EA5455;
+  transition: color 0.3s ease-in;
 }
 
 .overlay-nav {
@@ -497,6 +498,7 @@ nav {
 }
 .overlay-nav li :hover {
   color: #EA5455;
+  transition: color 0.3s ease;
 }
 .overlay-nav svg {
   position: absolute;
