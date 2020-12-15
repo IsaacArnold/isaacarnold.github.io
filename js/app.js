@@ -20,18 +20,22 @@ nav.addEventListener("click", (e) => {
     overlayNav.style.display = "";
   }
 
-  if (e.target === close) {
-    overlayNav.classList.toggle("slide-in");
-    overlayNav.classList.toggle("slide-out");
-    setTimeout(() => {
-      overlayNav.style.display = "none";
-    }, 1000);
-  }
+  //   if (e.target === close) {
+  //     overlayNav.classList.toggle("slide-in");
+  //     overlayNav.classList.toggle("slide-out");
+  //     setTimeout(() => {
+  //       overlayNav.style.display = "none";
+  //     }, 1000);
+  //   }
 });
 
 // Listens for clicks in the overlay nav and closes the overlay if the item clicked is the close icon
 overlayNav.addEventListener("click", (e) => {
   if (e.target.classList == "close" || e.target.tagName === "A") {
-    overlayNav.style.display = "none";
+    overlayNav.classList.toggle("slide-in");
+    overlayNav.classList.toggle("slide-out");
+    setTimeout(() => {
+      overlayNav.style.display = "none";
+    }, 1000);
   }
 });
