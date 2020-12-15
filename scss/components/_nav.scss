@@ -75,3 +75,33 @@ nav {
         top: 20px;
     }
 }
+
+.display-none {
+    display: none;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+@keyframes slide-out {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.slide-in {
+    animation: slide-in 1000ms ease;
+    
+}
+
+.slide-out {
+    animation: slide-out 1000ms ease;
+}
