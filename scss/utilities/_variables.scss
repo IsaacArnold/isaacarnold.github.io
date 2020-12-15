@@ -5,6 +5,8 @@
 $brand-color-primary: #2D4050;
 $brand-color-secondary: #E5E5E5;
 $accent-color: #EA5455;
+$accent-color-lighten: lighten($accent-color, 10%);
+$accent-color-darken: darken($accent-color, 10%);
 $primary-text-color: #fff;
 $secondary-text-color: #2D4050;
 $default-btn-color: #EA5455;

@@ -68,6 +68,13 @@ img {
         &:last-child {
             margin-left: 10px;
         }
+        &:hover {
+            background-color: $accent-color-lighten;
+            transition: background-color, 0.3s ease-in-out;
+        }
+        &:active{
+            background-color: $accent-color-darken;
+        }
     }
 }
 

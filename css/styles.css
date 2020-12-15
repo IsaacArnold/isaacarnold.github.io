@@ -715,6 +715,13 @@ img {
 .project-card .btn:last-child {
   margin-left: 10px;
 }
+.project-card .btn:hover {
+  background-color: #f08182;
+  transition: background-color, 0.3s ease-in-out;
+}
+.project-card .btn:active {
+  background-color: #e42728;
+}
 
 .project-text {
   padding: 0 10px;
