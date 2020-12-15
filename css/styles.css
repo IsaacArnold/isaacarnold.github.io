@@ -660,10 +660,10 @@ nav {
 }
 
 .project-grid-container {
-  max-width: 700px;
+  max-width: 1200px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 220px);
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, 280px);
+  grid-gap: 40px;
   justify-content: center;
   margin: auto;
   margin-bottom: 30px;
@@ -682,7 +682,7 @@ img {
 }
 
 .project-card {
-  height: 400px;
+  height: 500px;
   background-color: lightgray;
   display: flex;
   flex-direction: column;
@@ -692,6 +692,28 @@ img {
 }
 .project-card p {
   color: #2D4050;
+}
+.project-card .project-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-card .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EA5455;
+  color: #E5E5E5;
+  width: 120px;
+  height: 40px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: none;
+  margin: 20px 0;
+  font-size: 16px;
+}
+.project-card .btn:last-child {
+  margin-left: 10px;
 }
 
 .project-text {
