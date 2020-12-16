@@ -12,30 +12,16 @@ Event Listeners
 =====================================*/
 
 // Listens for clicks in the main nav and shows the overlay if the item clicked is the hamburger menu icon
-// Sliding idea from John Komarnicki's Youtube tutorial - URL: https://www.youtube.com/watch?v=RFBmA4wX8O0
+// Sliding idea from Tyler Pfledderer - Slack communication
 nav.addEventListener("click", (e) => {
   if (e.target === hamburger) {
-    overlayNav.classList.toggle("slide-out");
-    overlayNav.classList.toggle("slide-in");
-    overlayNav.style.display = "";
+    overlayNav.classList.toggle("overlay-visible");
   }
-
-  //   if (e.target === close) {
-  //     overlayNav.classList.toggle("slide-in");
-  //     overlayNav.classList.toggle("slide-out");
-  //     setTimeout(() => {
-  //       overlayNav.style.display = "none";
-  //     }, 1000);
-  //   }
 });
 
 // Listens for clicks in the overlay nav and closes the overlay if the item clicked is the close icon
 overlayNav.addEventListener("click", (e) => {
   if (e.target.classList == "close" || e.target.tagName === "A") {
-    overlayNav.classList.toggle("slide-in");
-    overlayNav.classList.toggle("slide-out");
-    setTimeout(() => {
-      overlayNav.style.display = "none";
-    }, 1000);
+    overlayNav.classList.toggle("overlay-visible");
   }
 });

@@ -468,7 +468,7 @@ nav {
 }
 .nav-list li :hover {
   color: #EA5455;
-  transition: color 0.3s ease-in;
+  transition: color 0.3s;
 }
 
 .overlay-nav {
@@ -483,6 +483,8 @@ nav {
   z-index: 1;
   display: flex;
   justify-content: center;
+  transform: translateY(-100%);
+  transition: transform 0.5s;
 }
 .overlay-nav .overlay-nav-ul {
   display: flex;
@@ -498,7 +500,7 @@ nav {
 }
 .overlay-nav li :hover {
   color: #EA5455;
-  transition: color 0.3s ease;
+  transition: color 0.3s;
 }
 .overlay-nav svg {
   position: absolute;
@@ -506,32 +508,8 @@ nav {
   top: 20px;
 }
 
-.display-none {
-  display: none;
-}
-
-@keyframes slide-in {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
-@keyframes slide-out {
-  0% {
-    transform: translateY(0%);
-  }
-  100% {
-    transform: translateY(-100%);
-  }
-}
-.slide-in {
-  animation: slide-in 1000ms ease;
-}
-
-.slide-out {
-  animation: slide-out 1000ms ease;
+.overlay-visible {
+  transform: translateY(0);
 }
 
 /* ============================================= */
