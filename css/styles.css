@@ -776,6 +776,24 @@ img {
 .social-icons #first {
   margin-left: 0;
 }
+.social-icons .github,
+.social-icons .linkedin,
+.social-icons .facebook,
+.social-icons .instagram {
+  transition: transform 0.3s cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+.social-icons .github:hover, .social-icons .github:focus, .social-icons .github:active,
+.social-icons .linkedin:hover,
+.social-icons .linkedin:focus,
+.social-icons .linkedin:active,
+.social-icons .facebook:hover,
+.social-icons .facebook:focus,
+.social-icons .facebook:active,
+.social-icons .instagram:hover,
+.social-icons .instagram:focus,
+.social-icons .instagram:active {
+  transform: scale(1.2);
+}
 
 /* ============================================= */
 /*        Footer Layout                          */

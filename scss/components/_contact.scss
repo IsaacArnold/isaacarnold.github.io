@@ -46,4 +46,15 @@
     #first {
         margin-left: 0;
     }
+    .github,
+    .linkedin,
+    .facebook,
+    .instagram {
+        transition: transform .3s cubic-bezier(.47, 2.02, .31, -0.36);
+        &:hover,
+        &:focus,
+        &:active {
+            transform: scale(1.2);
+        }
+    }
 }
