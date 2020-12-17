@@ -439,6 +439,10 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+.nav p {
+  margin-left: 10px;
+  margin-right: auto;
+}
 @media (max-width: 1023px) {
   .nav .laptop-nav {
     display: none;

@@ -10,6 +10,10 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    p {
+        margin-left: 10px;
+        margin-right: auto;
+    }
     .laptop-nav {
         @media (max-width: 1023px) {
             display: none;
