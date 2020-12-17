@@ -609,6 +609,24 @@ nav {
   align-content: center;
 }
 
+@keyframes chevron-bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(6px);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.feather {
+  animation: chevron-bounce 3s 2s infinite;
+}
+
 /* ============================================= */
 /*        About Secton Layout                    */
 /* ============================================= */
