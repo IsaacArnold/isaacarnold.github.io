@@ -8,12 +8,6 @@ const overlayNav = document.querySelector(".overlay-nav");
 const techChevron = document.querySelector(".chevron-right");
 const technologies = document.querySelector(".technologies");
 
-function resetHeight() {
-  document.body.style.height = window.innerHeight + "px";
-}
-window.addEventListener("resize", resetHeight);
-resetHeight();
-
 /* ====================================
 Event Listeners
 =====================================*/
