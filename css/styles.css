@@ -462,6 +462,11 @@ nav {
   cursor: pointer;
 }
 
+.logo-full {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   height: 20%;
   width: 20%;
@@ -553,6 +558,9 @@ nav {
 }
 
 .cta-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   padding: 15px 20px;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
@@ -788,6 +796,9 @@ img {
   padding-right: 10px;
 }
 .contact .cta-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   margin: 16px 0;
   width: 200px;
   height: 60px;

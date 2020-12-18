@@ -3,7 +3,6 @@ Global Variables
 =====================================*/
 
 const hamburger = document.querySelector(".hamburger");
-const close = document.querySelector(".close");
 const nav = document.querySelector(".nav");
 const overlayNav = document.querySelector(".overlay-nav");
 const techChevron = document.querySelector(".chevron-right");

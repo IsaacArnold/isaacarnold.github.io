@@ -31,6 +31,9 @@
 }
 
 .cta-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     padding: 15px 20px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -45,6 +48,13 @@
         font-size: 18px;
     }
 }
+
+// .hero-cta {
+//     margin-top: 30px;
+//     @media (max-height: 428px) {
+//         display: none;
+//     }
+// }
 
 .hero-image {
     position: absolute;
