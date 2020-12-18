@@ -12,14 +12,26 @@
     h4,
     p {
         color: $brand-color-primary;
-        &:last-child {
-            margin-bottom: 0;
-        }
     }
     .content-wrapper {
         padding: 0 10px;
         @media (min-width: 1024px) {
             width: 70ch;
+        }
+    }
+    .technologies {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        margin: 16px 0;
+        .chevron-right {
+            cursor: pointer;
+            transition: .3s ease;
+        }
+        .chevron-down {
+            transform: rotate(90deg);
+            transition: transform .3s ease;
         }
     }
 }
