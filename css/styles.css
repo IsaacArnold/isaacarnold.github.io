@@ -12,13 +12,11 @@
 /* ============================================= */
 html {
   scroll-behavior: smooth;
-  height: -webkit-fill-available;
 }
 
 body {
   background-color: #2D4050;
   position: relative;
-  height: -webkit-fill-available;
 }
 
 .cta-btn {
@@ -577,6 +575,11 @@ nav {
     width: 200px;
     height: 60px;
     font-size: 18px;
+  }
+}
+@media (max-height: 428px) {
+  .cta-btn {
+    display: none;
   }
 }
 
