@@ -12,11 +12,13 @@
 /* ============================================= */
 html {
   scroll-behavior: smooth;
+  height: -webkit-fill-available;
 }
 
 body {
   background-color: #2D4050;
   position: relative;
+  height: -webkit-fill-available;
 }
 
 .cta-btn {

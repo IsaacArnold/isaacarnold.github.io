@@ -4,11 +4,13 @@
 
 html {
     scroll-behavior: smooth;
+    height: -webkit-fill-available;
 }
 
 body {
     background-color: $brand-color-primary;
     position: relative;
+    height: -webkit-fill-available;
 }
 
 .cta-btn {
