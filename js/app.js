@@ -7,6 +7,7 @@ const nav = document.querySelector(".nav");
 const overlayNav = document.querySelector(".overlay-nav");
 const techChevron = document.querySelector(".chevron-right");
 const technologies = document.querySelector(".technologies");
+const laptopNav = document.querySelector(".laptop-nav");
 
 /* ====================================
 Event Listeners
@@ -61,3 +62,13 @@ technologies.addEventListener("click", (e) => {
     techListDiv.style.display = "none";
   }
 });
+
+window.onload = function () {
+  scrollSpy(laptopNav, {
+    offset: 0, // in pixels
+    menuActiveTarget: "li > a",
+    sectionClass: ".scrollspy",
+    activeClass: ".active",
+    scrollContainer: "",
+  });
+};

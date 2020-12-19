@@ -1,0 +1,30 @@
+{
+  "name": "simple-scrollspy",
+  "version": "2.0.3",
+  "description": "Simple scrollspy javascript without jQuery, no dependencies.",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "node_modules/webpack/bin/webpack.js --mode production --watch --progress --hide-modules",
+    "build": "node_modules/webpack/bin/webpack.js --mode production --progress --hide-modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimyvgy/simple-scrollspy.git"
+  },
+  "keywords": [
+    "scroll",
+    "scrollspy",
+    "menuspy"
+  ],
+  "author": "Nguyen Huu Kim <kimnguyen.ict@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kimyvgy/simple-scrollspy/issues"
+  },
+  "homepage": "https://kimyvgy.github.io/simple-scrollspy/demo",
+  "devDependencies": {
+    "terser-webpack-plugin": "^2.3.1",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^3.3.10"
+  }
+}
