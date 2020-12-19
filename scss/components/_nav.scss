@@ -59,6 +59,10 @@ nav {
     }
 }
 
+.active {
+    color: $accent-color;
+}
+
 .overlay-nav {
     position: absolute;
     top: 0;

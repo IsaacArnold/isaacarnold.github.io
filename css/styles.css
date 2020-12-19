@@ -489,6 +489,10 @@ nav {
   transition: color 0.3s;
 }
 
+.active {
+  color: #EA5455;
+}
+
 .overlay-nav {
   position: absolute;
   top: 0;
