@@ -63,6 +63,22 @@ technologies.addEventListener("click", (e) => {
   }
 });
 
+/* ====================================
+Mobile viewport script
+-- Addresses the issue of mobile browser UI with 100vh
+=====================================*/
+
+function resetHeight() {
+  document.body.style.height = window.innerHeight + "px";
+}
+
+window.addEventListener("resize", resetHeight());
+resetHeight();
+
+/* ====================================
+Scrollspy Script
+=====================================*/
+
 window.onload = function () {
   scrollSpy(laptopNav, {
     offset: 0, // in pixels
