@@ -3,7 +3,8 @@
 /* ============================================= */
 
 .hero-wrapper {
-    height: 100vh;
+    // height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     display: flex;
     flex-direction: column;
     padding-top: 60px;

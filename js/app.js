@@ -68,12 +68,17 @@ Mobile viewport script
 -- Addresses the issue of mobile browser UI with 100vh
 =====================================*/
 
-function resetHeight() {
-  document.body.style.height = window.innerHeight + "px";
-}
+// function resetHeight() {
+//   document.body.style.height = window.innerHeight + "px";
+// }
 
-window.addEventListener("resize", resetHeight());
-resetHeight();
+// window.addEventListener("resize", resetHeight());
+// resetHeight();
+
+window.addEventListener("resize", () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+});
 
 /* ====================================
 Scrollspy Script
