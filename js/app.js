@@ -70,7 +70,7 @@ Mobile viewport script
 =====================================*/
 
 // Listens for when the browser is resized
-window.addEventListener("resize", () => {
+window.addEventListener("DOMContentLoaded", () => {
   // Get the viewport height and multiply to get a value for a vh unit
   let vh = window.innerHeight * 0.01;
   // Set the value in the --vh custom property to the root of the document
