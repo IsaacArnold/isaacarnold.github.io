@@ -66,30 +66,17 @@ technologies.addEventListener("click", (e) => {
 /* ====================================
 Mobile viewport script
 -- Addresses the issue of mobile browser UI with 100vh
+-- Method taken from CSS-Tricks post > URL: https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
 =====================================*/
 
-// function resetHeight() {
-//   document.body.style.height = window.innerHeight + "px";
-// }
-
-// window.addEventListener("resize", resetHeight());
-// resetHeight();
-
+// Listens for when the browser is resized
 window.addEventListener("resize", () => {
+  // Get the viewport height and multiply to get a value for a vh unit
   let vh = window.innerHeight * 0.01;
+  // Set the value in the --vh custom property to the root of the document
   document.documentElement.style.setProperty("--vh", `${vh}px`);
 });
 
 /* ====================================
 Scrollspy Script
 =====================================*/
-
-window.onload = function () {
-  scrollSpy(laptopNav, {
-    offset: 0, // in pixels
-    menuActiveTarget: "li > a",
-    sectionClass: ".scrollspy",
-    activeClass: ".active",
-    scrollContainer: "",
-  });
-};
