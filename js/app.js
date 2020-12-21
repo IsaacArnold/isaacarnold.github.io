@@ -52,14 +52,7 @@ technologies.addEventListener("click", (e) => {
   if (e.target === techChevron) {
     //   Toggles in the class to rotate the chevron
     techChevron.classList.toggle("chevron-down");
-    // techListDiv.classList.toggle("techlist-visible");
-  }
-  if (e.target.classList.contains("chevron-down")) {
-    techListDiv.style.display = "";
-    // This next else if ensures that the button clicked is the chevron icon and elimates the div being removed if the user clicks elsewhere on the page.
-  } else if (e.target === techChevron) {
-    //   Removes the tech div is the chevron-down class is not active
-    techListDiv.style.display = "none";
+    techListDiv.classList.toggle("techlist-not-visible");
   }
 });
 
