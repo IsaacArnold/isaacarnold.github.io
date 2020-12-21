@@ -7,7 +7,6 @@ const nav = document.querySelector(".nav");
 const overlayNav = document.querySelector(".overlay-nav");
 const techChevron = document.querySelector(".chevron-right");
 const technologies = document.querySelector(".technologies");
-const laptopNav = document.querySelector(".laptop-nav");
 
 /* ====================================
 Event Listeners
@@ -70,10 +69,16 @@ Mobile viewport script
 =====================================*/
 
 // Listens for when the browser is resized
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("resize", () => {
   // Get the viewport height and multiply to get a value for a vh unit
   let vh = window.innerHeight * 0.01;
   // Set the value in the --vh custom property to the root of the document
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+});
+
+// Adds a listener to the refreshing of the page
+window.addEventListener("DOMContentLoaded", () => {
+  let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty("--vh", `${vh}px`);
 });
 
