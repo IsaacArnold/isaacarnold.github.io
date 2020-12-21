@@ -52,6 +52,7 @@ technologies.addEventListener("click", (e) => {
   if (e.target === techChevron) {
     //   Toggles in the class to rotate the chevron
     techChevron.classList.toggle("chevron-down");
+    // techListDiv.classList.toggle("techlist-visible");
   }
   if (e.target.classList.contains("chevron-down")) {
     techListDiv.style.display = "";
