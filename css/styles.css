@@ -543,10 +543,12 @@ nav {
 /*        Hero Layout                            */
 /* ============================================= */
 .hero-wrapper {
+  background-color: #E5E5E5;
   height: calc(var(--vh, 1vh) * 100);
   display: flex;
   flex-direction: column;
   padding-top: 60px;
+  align-items: center;
 }
 
 .hero {
@@ -554,6 +556,8 @@ nav {
   padding-top: 30px;
   flex-grow: 1;
   position: relative;
+  width: 100%;
+  max-width: 1560px;
 }
 .hero h2,
 .hero h3 {
@@ -618,6 +622,8 @@ nav {
 /*        Lead-in Secton Layout                  */
 /* ============================================= */
 .lead-in {
+  background-color: #2D4050;
+  width: 100%;
   padding-top: 10px;
 }
 .lead-in p {

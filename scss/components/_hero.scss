@@ -3,11 +3,13 @@
 /* ============================================= */
 
 .hero-wrapper {
+    background-color: $brand-color-secondary;
     // height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     display: flex;
     flex-direction: column;
     padding-top: 60px;
+    align-items: center;
 }
 
 .hero {
@@ -15,6 +17,8 @@
     padding-top: 30px;
     flex-grow: 1;
     position: relative;
+    width: 100%;
+    max-width: 1560px;
     h2,
     h3 {
         color: $brand-color-primary;
