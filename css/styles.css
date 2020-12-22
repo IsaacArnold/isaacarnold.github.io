@@ -544,7 +544,7 @@ nav {
 /* ============================================= */
 .hero-wrapper {
   background-color: #E5E5E5;
-  height: calc(var(--vh, 1vh) * 100);
+  height: -webkit-fill-available;
   display: flex;
   flex-direction: column;
   padding-top: 60px;
