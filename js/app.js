@@ -8,6 +8,7 @@ const laptopNav = document.querySelector(".laptop-nav");
 const overlayNav = document.querySelector(".overlay-nav");
 const techChevron = document.querySelector(".chevron-right");
 const technologies = document.querySelector(".technologies");
+const logoDiv = document.querySelector(".logo-full");
 
 /* ====================================
 Event Listeners
@@ -88,10 +89,15 @@ From KodeBase Youtube tutorial -> URL: https://www.youtube.com/watch?v=3cS0IsV-y
 const laptopNavList = laptopNav.querySelectorAll("ul li a");
 
 laptopNavList.forEach((link) => {
-  link.addEventListener("click", (e) => {
+  link.addEventListener("click", () => {
     laptopNavList.forEach((a) => a.classList.remove("active"));
     link.classList.add("active");
   });
+});
+
+// Removes the active class if the click is on the logo
+logoDiv.addEventListener("click", () => {
+  laptopNavList.forEach((a) => a.classList.remove("active"));
 });
 
 /* ====================================
@@ -105,4 +111,9 @@ overlayNavList.forEach((link) => {
     overlayNavList.forEach((a) => a.classList.remove("active"));
     link.classList.add("active");
   });
+});
+
+// Removes the active class if the click is on the logo
+logoDiv.addEventListener("click", () => {
+  overlayNavList.forEach((a) => a.classList.remove("active"));
 });
