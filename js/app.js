@@ -99,7 +99,6 @@ Active link after click - Overlay navigation
 From KodeBase Youtube tutorial -> URL: https://www.youtube.com/watch?v=3cS0IsV-yhA
 =====================================*/
 const overlayNavList = overlayNav.querySelectorAll("ul li a");
-console.log(overlayNavList);
 
 overlayNavList.forEach((link) => {
   link.addEventListener("click", () => {
