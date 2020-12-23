@@ -88,7 +88,7 @@ From KodeBase Youtube tutorial -> URL: https://www.youtube.com/watch?v=3cS0IsV-y
 const laptopNavList = laptopNav.querySelectorAll("ul li a");
 
 laptopNavList.forEach((link) => {
-  link.addEventListener("click", () => {
+  link.addEventListener("click", (e) => {
     laptopNavList.forEach((a) => a.classList.remove("active"));
     link.classList.add("active");
   });
