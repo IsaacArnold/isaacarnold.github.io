@@ -534,9 +534,8 @@ nav {
   transform: translateY(0);
 }
 
-.menu__item a.active {
-  color: #ff7600;
-  font-weight: bolder;
+.active {
+  color: #EA5455;
 }
 
 /* ============================================= */

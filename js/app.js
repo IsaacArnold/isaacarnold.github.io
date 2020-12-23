@@ -4,6 +4,7 @@ Global Variables
 
 const hamburger = document.querySelector(".hamburger");
 const nav = document.querySelector(".nav");
+const laptopNav = document.querySelector(".laptop-nav");
 const overlayNav = document.querySelector(".overlay-nav");
 const techChevron = document.querySelector(".chevron-right");
 const technologies = document.querySelector(".technologies");
@@ -79,3 +80,30 @@ window.addEventListener("DOMContentLoaded", () => {
 /* ====================================
 Scrollspy Script
 =====================================*/
+
+/* ====================================
+Active link after click - Laptop navigation
+From KodeBase Youtube tutorial -> URL: https://www.youtube.com/watch?v=3cS0IsV-yhA
+=====================================*/
+const laptopNavList = laptopNav.querySelectorAll("ul li a");
+
+laptopNavList.forEach((link) => {
+  link.addEventListener("click", () => {
+    laptopNavList.forEach((a) => a.classList.remove("active"));
+    link.classList.add("active");
+  });
+});
+
+/* ====================================
+Active link after click - Overlay navigation
+From KodeBase Youtube tutorial -> URL: https://www.youtube.com/watch?v=3cS0IsV-yhA
+=====================================*/
+const overlayNavList = overlayNav.querySelectorAll("ul li a");
+console.log(overlayNavList);
+
+overlayNavList.forEach((link) => {
+  link.addEventListener("click", () => {
+    overlayNavList.forEach((a) => a.classList.remove("active"));
+    link.classList.add("active");
+  });
+});
