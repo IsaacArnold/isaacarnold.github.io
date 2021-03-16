@@ -3,23 +3,23 @@
 /* ============================================= */
 
 html {
-    scroll-behavior: smooth;
-    // height: -webkit-fill-available;
+  scroll-behavior: smooth;
+  // height: -webkit-fill-available;
 }
 
 body {
-    background-color: $brand-color-primary;
-    position: relative;
-    // height: -webkit-fill-available;
+  background-color: $brand-color-primary;
+  position: relative;
+  // height: -webkit-fill-available;
 }
 
 .cta-btn {
-    background-color: $accent-color;
-    cursor: pointer;
+  background-color: $accent-color;
+  cursor: pointer;
 }
 
 .content-wrapper {
-    width: 95%;
-    max-width: 1440px;
-    margin: auto;
+  width: 95%;
+  max-width: 1440px;
+  margin: auto;
 }

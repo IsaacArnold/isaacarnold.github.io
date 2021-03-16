@@ -3,70 +3,70 @@
 /* ============================================= */
 
 .hero-wrapper {
-    background-color: $brand-color-secondary;
-    // height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
-    display: flex;
-    flex-direction: column;
-    padding-top: 60px;
-    align-items: center;
+  background-color: $brand-color-secondary;
+  // height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  align-items: center;
 }
 
 .hero {
-    background-color: $brand-color-secondary;
-    padding-top: 30px;
-    flex-grow: 1;
+  background-color: $brand-color-secondary;
+  padding-top: 30px;
+  flex-grow: 1;
+  position: relative;
+  width: 100%;
+  max-width: 1560px;
+  h2,
+  h3 {
+    color: $brand-color-primary;
+  }
+  h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  h3 {
+    width: 20ch;
+  }
+  .content-wrapper {
     position: relative;
-    width: 100%;
-    max-width: 1560px;
-    h2,
-    h3 {
-        color: $brand-color-primary;
-    }
-    h2 {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    h3 {
-        width: 20ch;
-    }
-    .content-wrapper {
-        position: relative;
-    }
+  }
 }
 
 .cta-btn {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 20px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    border: none;
-    &:hover {
-        background-color: $accent-color-lighten;
-        transition: background-color 0.3s ease;
-    }
-    @media (min-width: 768px) {
-        width: 200px;
-        height: 60px;
-        font-size: 18px;
-    }
-    @media (max-height: 428px) {
-        display: none;
-    }
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: none;
+  &:hover {
+    background-color: $accent-color-lighten;
+    transition: background-color 0.3s ease;
+  }
+  @media (min-width: 768px) {
+    width: 200px;
+    height: 60px;
+    font-size: 18px;
+  }
+  @media (max-height: 428px) {
+    display: none;
+  }
 }
 
 .hero-image {
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    height: 40vh;
-    width: auto;
-    @media (max-height: 517px) {
-        display: none;
-    }
-    @media (min-width: 768px) {
-        height: 55vh;
-    }
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  height: 40vh;
+  width: auto;
+  @media (max-height: 517px) {
+    display: none;
+  }
+  @media (min-width: 768px) {
+    height: 55vh;
+  }
 }
