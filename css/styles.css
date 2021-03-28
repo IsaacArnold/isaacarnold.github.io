@@ -728,18 +728,15 @@ nav {
 }
 
 .project-image {
-  background-color: #fff;
-  height: 140px;
   border-radius: 10px;
-  overflow: hidden;
 }
 
 img {
-  height: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
 }
 
 .project-card {
-  height: 500px;
   background-color: lightgray;
   display: flex;
   flex-direction: column;
