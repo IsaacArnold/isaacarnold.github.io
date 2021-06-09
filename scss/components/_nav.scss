@@ -3,109 +3,109 @@
 /* ============================================= */
 
 nav {
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    background-color: $brand-color-primary;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: $brand-color-primary;
 }
 
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    p {
-        margin-left: 10px;
-        margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    margin-left: 10px;
+    margin-right: auto;
+  }
+  .laptop-nav {
+    @media (max-width: 1023px) {
+      display: none;
     }
-    .laptop-nav {
-        @media (max-width: 1023px) {
-            display: none;
-        }
-    }
+  }
 }
 
 .hamburger {
-    cursor: pointer;
-    @media (min-width: 1024px) {
-        display: none;
-    }
+  cursor: pointer;
+  @media (min-width: 1024px) {
+    display: none;
+  }
 }
 
 .close {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .logo-full {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-    height: 20%;
-    width: 20%;
-    margin-left: -10px;
+  height: 20%;
+  width: 20%;
+  margin-left: -10px;
 }
 
 .nav-list {
-    list-style-type: none;
-    display: flex;
-    padding: 0;
-    li {
-        margin-left: 30px;
-        :hover {
-            color: $accent-color;
-            transition: color 0.3s;
-        }
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  li {
+    margin-left: 30px;
+    :hover {
+      color: $accent-color;
+      transition: color 0.3s;
     }
+  }
 }
 
 .active {
-    color: $accent-color;
+  color: $accent-color;
 }
 
 .overlay-nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: $brand-color-primary;
-    width: 100%;
-    height: 60vh;
-    z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $brand-color-primary;
+  width: 100%;
+  height: 60vh;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  // Sets the default position of overlay to off-screen
+  // Idea from Tyler Pfledderer - Slack communication
+  transform: translateY(-100%);
+  transition: transform 0.5s;
+  .overlay-nav-ul {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    // Sets the default position of overlay to off-screen
-    // Idea from Tyler Pfledderer - Slack communication
-    transform: translateY(-100%);
-    transition: transform .5s;
-    .overlay-nav-ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
+    align-items: center;
+    padding: 0;
+  }
+  li {
+    list-style-type: none;
+    margin-bottom: 20px;
+    font-size: 20px;
+    :hover {
+      color: $accent-color;
+      transition: color 0.3s;
     }
-    li {
-        list-style-type: none;
-        margin-bottom: 20px;
-        font-size: 20px;
-        :hover {
-            color: $accent-color;
-            transition: color 0.3s;
-        }
-    }
-    svg {
-        position: absolute;
-        right: 20px;
-        top: 20px;
-    }
+  }
+  svg {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
 }
 
 .overlay-visible {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 .active {
-    color: $accent-color;
+  color: $accent-color;
 }
