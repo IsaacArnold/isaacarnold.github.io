@@ -47,6 +47,14 @@ technologies.addEventListener("click", (e) => {
         <svg width="40" height="40">
             <use xlink:href="#js"/>
         </svg>
+
+        <svg width="40" height="40">
+            <use xlink:href="#react"/>
+        </svg>
+
+        <svg width="40" height="40">
+            <use xlink:href="#gatsby"/>
+        </svg>
       `;
   techListDiv.innerHTML = techHTML;
 
