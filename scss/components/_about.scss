@@ -3,39 +3,39 @@
 /* ============================================= */
 
 .about {
-    background-color: $brand-color-secondary;
+  background-color: $brand-color-secondary;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  padding: 60px 0;
+  h4,
+  p {
+    color: $brand-color-primary;
+  }
+  .content-wrapper {
+    padding: 0 10px;
+    @media (min-width: 1024px) {
+      width: 70ch;
+    }
+  }
+  .technologies {
     display: flex;
-    flex-direction: column;
-    align-content: center;
-    text-align: center;
-    padding: 60px 0;
-    h4,
-    p {
-        color: $brand-color-primary;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-weight: 600;
+    margin: 16px 0;
+    .chevron-right {
+      cursor: pointer;
+      transition: 0.3s ease;
     }
-    .content-wrapper {
-        padding: 0 10px;
-        @media (min-width: 1024px) {
-            width: 70ch;
-        }
+    .chevron-down {
+      transform: rotate(90deg);
+      transition: transform 0.3s ease;
     }
-    .technologies {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        font-weight: 600;
-        margin: 16px 0;
-        .chevron-right {
-            cursor: pointer;
-            transition: .3s ease;
-        }
-        .chevron-down {
-            transform: rotate(90deg);
-            transition: transform .3s ease;
-        }
-    }
-    .techlist-not-visible {
-        display: none;
-    }
+  }
+  .techlist-not-visible {
+    display: none;
+  }
 }
