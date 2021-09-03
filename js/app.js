@@ -87,10 +87,6 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 /* ====================================
-Scrollspy Script
-=====================================*/
-
-/* ====================================
 Active link after click - Laptop navigation
 From KodeBase Youtube tutorial -> URL: https://www.youtube.com/watch?v=3cS0IsV-yhA
 =====================================*/
