@@ -20,7 +20,7 @@ a {
 /*              Typography                       */
 /* ============================================= */
 
-h2 {
+h1 {
   font-size: 2rem;
   font-weight: 700;
   @media (min-width: 768px) {
@@ -28,22 +28,29 @@ h2 {
   }
 }
 
-h3 {
+h2 {
   font-weight: 600;
+  font-size: 1.17em;
   @media (min-width: 768px) {
     font-size: 1.3rem;
   }
 }
 
-h4 {
+h3 {
   margin-top: 0;
   font-size: 20px;
 }
 
-h5 {
+h4 {
   color: $brand-color-primary;
   font-size: 16px;
   margin-bottom: 0;
+}
+
+h1,
+h3,
+h4 {
+  margin-bottom: 30px;
 }
 
 .txt-accent {

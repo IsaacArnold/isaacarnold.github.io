@@ -19,17 +19,23 @@
   position: relative;
   width: 100%;
   max-width: 1560px;
-  h2,
-  h3 {
+  h1,
+  h2 {
     color: $brand-color-primary;
   }
-  h2 {
+  h1 {
     margin-top: 0;
     margin-bottom: 0;
   }
-  h3 {
-    width: 20ch;
+  h2 {
+    width: 14ch;
   }
+  @media (min-width: 375px) {
+    h2 {
+      width: 20ch;
+    }
+  }
+
   .content-wrapper {
     position: relative;
   }
