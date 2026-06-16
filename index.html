@@ -1,467 +1,491 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&display=swap"
-        rel="stylesheet">
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-    <link rel="manifest" href="favicons/site.webmanifest">
-    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#2d4050">
-    <meta name="apple-mobile-web-app-title" content="Isaac Arnold">
-    <meta name="application-name" content="Isaac Arnold">
-    <meta name="msapplication-TileColor" content="#2d4050">
-    <meta name="theme-color" content="#ffffff">
-    <!-- /Favicons -->
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Isaac Arnold | Front-End Web Developer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Isaac Arnold — Software Engineer</title>
+  <meta name="description" content="Isaac Arnold — Brisbane-based software engineer working across frontend, API and AI-first engineering practices." />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png" />
+  <link rel="manifest" href="favicons/site.webmanifest" />
+
+  <!-- Pre-paint: restore saved theme before first render to avoid FOUC -->
+  <script>
+    (function () {
+      try {
+        var p = JSON.parse(localStorage.getItem('ia_prefs') || '{}');
+        if (p.theme) document.documentElement.setAttribute('data-theme', p.theme);
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/terminal.css" />
+  <link rel="stylesheet" href="css/contact-form.css" />
 </head>
 <body>
 
-    <header>
-        <!-- Header section -->
-        <nav>
-            <!-- Nav section -->
-            <div class="overlay-nav">
-                <!-- Mobile nav overlay -->
-                <svg class="close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="18" y1="6" x2="6" y2="18"></line>
-                    <line x1="6" y1="6" x2="18" y2="18"></line>
-                </svg>
-                <ul class="overlay-nav-ul">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div> <!-- /Mobile nav overlay -->
-            <div class="content-wrapper nav">
-                <!-- Nav content -->
-                <div class="logo-full">
-                    <a href="#" class="home">
-                        <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0)">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M14.242 3.03a1 1 0 01.728 1.213l-4 16a1 1 0 11-1.94-.485l4-16a1 1 0 011.213-.728zM6.707 6.293a1 1 0 010 1.414L2.414 12l4.293 4.293a1 1 0 11-1.414 1.414l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 0zm10.586 0a1 1 0 011.414 0l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414-1.414L21.586 12l-4.293-4.293a1 1 0 010-1.414z"
-                                    style="fill:#EA5455" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0">
-                                    <path fill="#fff" d="M0 0h24v24H0z" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </a>
-                    <a href="#" class="home">
-                        <p>Isaac Arnold</p>
-                    </a>
-                </div>
-                <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="3" y1="12" x2="21" y2="12"></line>
-                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                    <line x1="3" y1="18" x2="21" y2="18"></line>
-                </svg>
-                <div class="laptop-nav">
-                    <ul class="nav-list">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div> <!-- /Nav content -->
-        </nav> <!-- /Nav section -->
-        <div class="hero-wrapper">
-            <!-- Hero and lead-in wrapper -->
-            <section class="hero">
-                <!-- Hero section -->
-                <div class="content-wrapper">
-                    <!-- Content-wrapper - Hero -->
-                    <h1>Hi, I'm Isaac</h1>
-                    <h2>A <span class="txt-accent">self-taught</span> front-end web developer</h2>
-                    <a href="mailto:isaacarnold@icloud.com" class="cta-btn">Get in touch</a>
-                </div> <!-- /Content-wrapper - Hero -->
-                <img class="hero-image" src="images/isaac-profile.png"
-                    alt="Profile image of Isaac Arnold, front-end web developer">
-            </section> <!-- /Hero section -->
-            <div class="lead-in">
-                <!-- Lead-in div -->
-                <div class="content-wrapper lead-in-div">
-                    <!-- Content-wrapper - Lead-in -->
-                    <p>Find out a little more about me, my recent projects and how you can get in touch!</p>
-                    <a href="#about">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="77" height="77" viewBox="0 0 24 24" fill="none"
-                            stroke="#EA5455" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9" class="feather"></polyline>
-                        </svg>
-                    </a>
-                </div> <!-- /Content-wrapper - Lead-in -->
-            </div>
-            <!--/Lead-in div -->
-        </div> <!-- /Hero and lead-in wrapper -->
-    </header> <!-- /Header section -->
-    <main>
-        <!-- Main content section -->
-        <section class="about" id="about">
-            <!-- About section -->
-            <div class="content-wrapper">
-                <h3>About Me</h3>
-                <p>Hi - I'm Isaac, a <span class="txt-accent">self-taught</span> front end web developer currently
-                    residing in Brisbane, Australia.</p>
-                <p>I began my web development journey in June 2020 after discovering a passion for bringing ideas to
-                    life via code. While juggling a full-time digital marketing job, I decided to invest in myself and
-                    learn to code through the <span class="txt-accent">Front-End Web Development TechDegree</span> with
-                    Treehouse.</p>
-                <p>I love learning new things and enjoy the challenge of creating websites. I thoroughly enjoy the
-                    process of turning <span class="txt-accent">ideas into designs</span> and then turning designs into
-                    reality.</p>
-                <p>In my spare time, you'll often find me reading <span class="txt-accent">books</span>, playing <span
-                        class="txt-accent">video games</span> or enjoying the many <span class="txt-accent">sporting
-                        options</span> Brisbane has to offer. </p>
-                <p class="technologies">Find out which technologies I'm currently using. <svg
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="#EA5455" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="chevron-right">
-                        <polyline points="9 18 15 12 9 6"></polyline>
-                    </svg></p>
-                <div class="tech-list techlist-not-visible">
-                    <!-- Technology icons injected via JS here -->
-                </div>
-            </div> <!-- /Content-wrapper - About -->
-        </section> <!-- /About section -->
-        <section class="projects" id="projects">
-            <!-- Project section -->
-            <div class="content-wrapper">
-                <h3>Projects</h3>
-                <p>Check out what <span class="txt-accent">I've been working</span> on lately!</p>
-                <div class="project-grid-container">
-                    <!-- Project grid container -->
-                    <div class="project-card">
-                        <!-- Project card -->
-                        <div class="project-image">
-                            <!-- Project image -->
-                            <a href="https://ruthyscafe.netlify.app/" target="_blank"><img
-                                    src="images/project-images/resized/ruthys-website-two.png" alt="Ruthy's website screenshot"></a>
-                        </div> <!-- /Project image -->
-                        <div class="project-text">
-                            <h4>Ruthy's Cafe Website</h4>
-                            <p>Website design for a local coffee shop. Built with Gatsby, this site features a responsive design and Gatsby SEO component. Contact form and website are both hosted on Netlify</p>
-                        </div>
-                        <div class="project-languages">
-                            <!-- Language svgs -->
-                            <svg width="40" height="40">
-                                <use xlink:href="#gatsby" />
-                            </svg>
+<!-- Background ambience -->
+<div class="bg-field" aria-hidden="true">
+  <div class="orb a"></div>
+  <div class="orb b"></div>
+  <div class="orb c"></div>
+  <div class="bg-grid"></div>
+</div>
 
-                            <svg width="40" height="40">
-                                <use xlink:href="#sass" />
-                            </svg>
+<!-- ============================================================
+     Nav
+     ============================================================ -->
+<nav class="nav" id="site-nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="brand">
+      <span class="logo">ia</span>
+      <span>isaac<span class="blink">_</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="#about"><span class="idx">01.</span>About</a>
+      <a href="#work"><span class="idx">02.</span>Work</a>
+      <a href="#projects"><span class="idx">03.</span>Projects</a>
+      <a href="#skills"><span class="idx">04.</span>Skills</a>
+      <a href="#contact"><span class="idx">05.</span>Contact</a>
+    </div>
+    <div class="nav-tools">
+      <button class="term-btn" id="terminal-btn" title="Switch to terminal mode" aria-label="Open terminal mode">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 8 4 4-4 4M13 16h6"/><rect x="2" y="3" width="20" height="18" rx="3"/></svg>
+        terminal
+      </button>
+      <button class="icon-btn" id="theme-btn" title="Toggle theme" aria-label="Toggle colour theme">
+        <!-- Icon injected by JS -->
+      </button>
+    </div>
+  </div>
+</nav>
 
-                            <svg width="40" height="40">
-                                <use xlink:href="#figma" />
-                            </svg>
-                        </div> <!-- /Language svgs -->
-                        <div class="project-btns">
-                            <!-- Project btns -->
-                            <a href="https://ruthyscafe.netlify.app/" target="_blank" class="btn">Live Site</a>
-                            <a href="https://github.com/IsaacArnold/ruthys-website" target="_blank" class="btn">Source
-                                Code</a>
-                        </div> <!-- /Project btns -->
-                    </div> <!-- /Project card -->
-                    <div class="project-card">
-                        <!-- Project card -->
-                        <div class="project-image">
-                            <!-- Project image -->
-                            <a href="https://goodgoods.digital/" target="_blank"><img
-                                    src="images/project-images/resized/good-goods.png" alt="Good Goods website screenshot"></a>
-                        </div> <!-- /Project image -->
-                        <div class="project-text">
-                            <h4>Good Goods</h4>
-                            <p>Website built for listing products for sale. Uses Gatsby for frontend and Sanity for backend CMS. Aim was to create a simple CMS to upload product information and have it display on a website.</p>
-                        </div>
-                        <div class="project-languages">
-                            <!-- Language svgs -->
-                            <svg width="40" height="40">
-                                <use xlink:href="#gatsby" />
-                            </svg>
+<!-- ============================================================
+     Main
+     ============================================================ -->
+<main class="shell">
 
-                            <!-- <svg width="40" height="40">
-                                <use xlink:href="#sanity" />
-                            </svg> -->
-                        </div> <!-- /Language svgs -->
-                        <div class="project-btns">
-                            <!-- Project btns -->
-                            <a href="https://goodgoods.digital/" target="_blank" class="btn">Live Site</a>
-                            <a href="https://github.com/IsaacArnold/buy-our-stuff" target="_blank" class="btn">Source
-                                Code</a>
-                        </div> <!-- /Project btns -->
-                    </div> <!-- /Project card -->
-                    <div class="project-card">
-                        <!-- Project card -->
-                        <div class="project-image">
-                            <!-- Project image -->
-                            <a href="https://fiberlandingpage123.netlify.app/" target="_blank"><img
-                                    src="images/project-images/resized/fiber-landing-page-two.png" alt="Fiber landing page image"></a>
-                        </div> <!-- /Project image -->
-                        <div class="project-text">
-                            <h4>Fiber Landing Page</h4>
-                            <p>A landing page design provided by Codewell. Mobile first, fully responsive site built with Gatsby. Integrates Netlify forms to host fully functioning contact form. Deployed with Netlify.</p>
-                        </div>
-                        <div class="project-languages">
-                            <!-- Language svgs -->
-                            <svg width="40" height="40">
-                                <use xlink:href="#gatsby" />
-                            </svg>
+  <!-- ---- HERO ---- -->
+  <section id="top" class="hero wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="hero-status reveal in">
+          <span class="dot"></span> Open to interesting work · Brisbane, Australia
+        </div>
+        <h1 class="reveal in">
+          <span class="line">Hi, I'm Isaac —</span>
+          <span class="line">I build for the web, <span class="grad-text">with AI in the loop.</span></span>
+        </h1>
+        <p class="hero-lede reveal in">
+          Software engineer working across <b>frontend</b>, <b>API</b> and <b>design-system</b> work
+          — and driving <b>AI-first engineering</b> practices that lift how a whole team ships.
+        </p>
+        <div class="hero-cta reveal in">
+          <a class="btn btn-primary" href="#projects">
+            View my work
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#contact">
+            Get in touch
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m3 7 9 6 9-6"/></svg>
+          </a>
+        </div>
+        <div class="hero-meta reveal in">
+          <a href="https://github.com/IsaacArnold" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5a10.5 10.5 0 0 0-3.32 20.46c.53.1.72-.23.72-.5v-1.76c-2.92.64-3.54-1.4-3.54-1.4-.48-1.22-1.17-1.54-1.17-1.54-.95-.65.07-.64.07-.64 1.06.07 1.61 1.09 1.61 1.09.94 1.6 2.46 1.14 3.06.87.1-.68.37-1.14.67-1.4-2.33-.27-4.78-1.17-4.78-5.2 0-1.15.41-2.09 1.09-2.83-.11-.27-.47-1.34.1-2.8 0 0 .89-.28 2.91 1.08a10.1 10.1 0 0 1 5.3 0c2.02-1.36 2.9-1.08 2.9-1.08.58 1.46.22 2.53.11 2.8.68.74 1.09 1.68 1.09 2.83 0 4.04-2.46 4.93-4.8 5.19.38.33.71.97.71 1.96v2.9c0 .28.19.61.73.5A10.5 10.5 0 0 0 12 1.5z"/></svg>
+            IsaacArnold
+          </a>
+          <a href="https://www.linkedin.com/in/isaac-arnold-64b54279/" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+            LinkedIn
+          </a>
+          <a href="#contact">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m3 7 9 6 9-6"/></svg>
+            Say hello →
+          </a>
+        </div>
+      </div>
 
-                            <svg width="40" height="40">
-                                <use xlink:href="#sass" />
-                            </svg>
-                        </div> <!-- /Language svgs -->
-                        <div class="project-btns">
-                            <!-- Project btns -->
-                            <a href="https://fiberlandingpage123.netlify.app/" target="_blank" class="btn">Live Site</a>
-                            <a href="https://github.com/IsaacArnold/fiber-landing-page-two" target="_blank" class="btn">Source
-                                Code</a>
-                        </div> <!-- /Project btns -->
-                    </div> <!-- /Project card -->
-                    <div class="project-card">
-                        <!-- Project card -->
-                        <div class="project-image">
-                            <!-- Project image -->
-                            <a href="https://isaacarnold.dev/to-do-app/" target="_blank"><img
-                                    src="images/project-images/resized//to-do-app-2.png" alt="To-Do App Image"></a>
-                        </div> <!-- /Project image -->
-                        <div class="project-text">
-                            <h4>To-Do App</h4>
-                            <p>A to-do web application built using React, React Hooks and Local Storage. Fully responsive application allowing users to input tasks, mark them completed and delete.</p>
-                        </div>
-                        <div class="project-languages">
-                            <!-- Language svgs -->
-                            <svg width="40" height="40">
-                                <use xlink:href="#react" />
-                            </svg>
+      <div class="codecard reveal in" aria-hidden="true">
+        <div class="codecard-bar">
+          <span class="dots"><i></i><i></i><i></i></span>
+          <span class="fname">CLAUDE.md</span>
+        </div>
+        <div class="codecard-body">
+          <span class="ln"><span class="code-com"># Isaac Arnold</span></span>
+          <span class="ln"><span class="code-key">role</span>: <span class="code-str">"Software Engineer"</span></span>
+          <span class="ln"><span class="code-key">based</span>: <span class="code-str">"Brisbane, AU"</span></span>
+          <span class="ln"><span class="code-key">focus</span>: [<span class="code-str">"frontend"</span>, <span class="code-str">"api"</span>, <span class="code-str">"ai-first"</span>]</span>
+          <span class="ln"> </span>
+          <span class="ln"><span class="code-com">## guardrails</span></span>
+          <span class="ln"><span class="code-fn">ship</span>(<span class="code-str">"fast"</span>) <span class="code-key">&amp;&amp;</span> <span class="code-fn">keep</span>(<span class="code-str">"quality"</span>)</span>
+          <span class="ln"><span class="code-com"># left-handed. runs on coffee.</span></span>
+          <span class="ln"><span class="code-key">$</span> <span class="code-cursor"></span></span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                            <svg width="40" height="40">
-                                <use xlink:href="#sass" />
-                            </svg>
-                        </div> <!-- /Language svgs -->
-                        <div class="project-btns">
-                            <!-- Project btns -->
-                            <a href="https://isaacarnold.dev/to-do-app/" target="_blank" class="btn">Live Site</a>
-                            <a href="https://github.com/IsaacArnold/to-do-app" target="_blank" class="btn">Source
-                                Code</a>
-                        </div> <!-- /Project btns -->
-                    </div> <!-- /Project card -->
-                    <div class="project-card">
-                        <!-- Project card -->
-                        <div class="project-image">
-                            <!-- Project image -->
-                            <a href="https://isaacarnold.dev/dad-jokes-app/" target="_blank"><img
-                                    src="images/project-images/resized//dad-jokes.png" alt="Dad Jokes Image"></a>
-                        </div> <!-- /Project image -->
-                        <div class="project-text">
-                            <h4>Dad Jokes App</h4>
-                            <p>A React web application that fetches Dad Jokes and displays them on the page. Allows users to fetch a new joke via a button.</p>
-                        </div>
-                        <div class="project-languages">
-                            <!-- Language svgs -->
-                            <svg width="40" height="40">
-                                <use xlink:href="#react" />
-                            </svg>
+  <!-- ---- ABOUT ---- -->
+  <section id="about" class="section-pad wrap">
+    <p class="eyebrow reveal"><span class="num">01</span> / about</p>
+    <div class="about-grid">
+      <div class="about-prose reveal">
+        <p class="lead">
+          I'm a software engineer who pivoted into tech from digital marketing —
+          and never looked back. Today I work where <span class="grad-text">thoughtful frontend</span> meets
+          <span class="grad-text"> AI-assisted delivery</span>.
+        </p>
+        <p>
+          At <b>The Lottery Corporation</b> I work across customer-facing features, an emerging
+          API layer and a frontend design system — while establishing the AI-first practices
+          the web team builds with: <b>CLAUDE.md</b> guardrails, reusable skills and quality gates
+          that make speed and consistency compatible.
+        </p>
+        <p>
+          Before engineering I ran digital marketing and paid media in New Zealand, then retrained
+          through the Treehouse Front End Techdegree. That detour means I think about the
+          <b> business and the user</b> as readily as the code.
+        </p>
+        <p>
+          Outside the editor you'll find me on the <b>golf course</b>, hunting down
+          <b> vinyl</b>, deep in a <b>video game</b>, or simply chasing a better cup of <b>coffee</b>.
+        </p>
+      </div>
+      <div class="about-side">
+        <div class="fact-card reveal">
+          <h4>Off the clock</h4>
+          <div class="chips">
+            <span class="chip"><span class="ic">⛳</span>Golf</span>
+            <span class="chip"><span class="ic">☕</span>Coffee</span>
+            <span class="chip"><span class="ic">🎵</span>Vinyl records</span>
+            <span class="chip"><span class="ic">🎮</span>Video games</span>
+            <span class="chip"><span class="ic">🤚</span>Left-handed</span>
+          </div>
+        </div>
+        <div class="fact-card reveal">
+          <h4>Currently</h4>
+          <ul class="now-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              <span>Driving AI-first engineering practice at The Lottery Corporation.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              <span>Building a frontend design system, AI-first.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              <span>Shipping with Claude Code, BMAD and plan-mode workflows daily.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                            <svg width="40" height="40">
-                                <use xlink:href="#sass" />
-                            </svg>
-                        </div> <!-- /Language svgs -->
-                        <div class="project-btns">
-                            <!-- Project btns -->
-                            <a href="https://isaacarnold.dev/dad-jokes-app/" target="_blank" class="btn">Live Site</a>
-                            <a href="https://github.com/IsaacArnold/dad-jokes-app" target="_blank" class="btn">Source
-                                Code</a>
-                        </div> <!-- /Project btns -->
-                    </div> <!-- /Project card -->                    
-                    <div class="project-card">
-                        <!-- Project card -->
-                        <div class="project-image">
-                            <!-- Project image -->
-                            <a href="https://isaacarnold.dev/weather-app/" target="_blank"><img
-                                    src="images/project-images/resized//weather-app-screenshot.png" alt="Weather App Image"></a>
-                        </div> <!-- /Project image -->
-                        <div class="project-text">
-                            <h4>Weather App</h4>
-                            <p>A weather app that displays current and 8-day forecast weather for specified city. Uses
-                                openweather API to fetch data.</p>
-                        </div>
-                        <div class="project-languages">
-                            <!-- Language svgs -->
-                            <svg width="40" height="40">
-                                <use xlink:href="#html" />
-                            </svg>
+  <!-- ---- EXPERIENCE ---- -->
+  <section id="work" class="section-pad wrap">
+    <p class="eyebrow reveal"><span class="num">02</span> / where I've worked</p>
+    <h2 class="section-title reveal">Experience</h2>
+    <div class="timeline">
 
-                            <svg width="40" height="40">
-                                <use xlink:href="#sass" />
-                            </svg>
+      <div class="tl-item reveal">
+        <div class="tl-when">
+          Mar 2023 — Present
+          <span class="dur">Current</span>
+        </div>
+        <div class="tl-main">
+          <h3 class="tl-role">Software Engineer</h3>
+          <div class="tl-co"><span class="at">@</span> The Lottery Corporation · Brisbane</div>
+          <p class="tl-desc">Drive feature delivery, emerging API work, and AI-first engineering practices across customer-facing products and internal platform work — shaping how the team builds software.</p>
+          <ul class="tl-points">
+            <li>Establishing AI-assisted development practice for the web team — CLAUDE.md config, reusable skills and code-quality guardrails that lift consistency and delivery speed.</li>
+            <li>Leading a frontend design system built AI-first, exploring how to streamline UI implementation and accelerate delivery.</li>
+            <li>Contributing to the Digital Integration Layer (DIL) API — refactoring business logic out of frontend clients into the API for lighter, more maintainable frontends.</li>
+            <li>Led web delivery of Scan ISI, letting customers scan Instant Scratch-Its online to check results.</li>
+            <li>Co-led a headless-AEM + React POC for thelott.com and independently extended scope to evaluate Contentful as an alternative CMS.</li>
+          </ul>
+          <div class="tl-tags">
+            <span>React</span><span>AureliaJS</span><span>AEM</span><span>Contentful</span><span>Claude Code</span><span>API</span>
+          </div>
+        </div>
+      </div>
 
-                            <svg width="40" height="40">
-                                <use xlink:href="#js" />
-                            </svg>
-                        </div> <!-- /Language svgs -->
-                        <div class="project-btns">
-                            <!-- Project btns -->
-                            <a href="https://isaacarnold.dev/weather-app/" target="_blank" class="btn">Live Site</a>
-                            <a href="https://github.com/IsaacArnold/weather-app" target="_blank" class="btn">Source
-                                Code</a>
-                        </div> <!-- /Project btns -->
-                    </div> <!-- /Project card -->
-                </div> <!-- /Project grid container -->
-            </div> <!-- /Content-wrapper - Projects -->
-        </section> <!-- /Project section -->
-        <section class="contact" id="contact">
-            <!-- Contact section -->
-            <div class="content-wrapper">
-                <h3>Contact</h3>
-                <p>If you are looking for a <span class="txt-accent">Front-End Developer</span> or want to bring your
-                    <span class="txt-accent">ideas to life</span>, please don't hesitate to get in touch - I'd love to
-                    hear from you!
-                </p>
-                <a href="mailto:isaacarnold@icloud.com" class="cta-btn">Email me</a>
-                <div class="social-icons">
-                    <!-- Socials svgs -->
-                    <a id="first" href="https://github.com/IsaacArnold" target="_blank">
-                        <svg class="github" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                            viewBox="0 0 24 24" fill="none" stroke="#2D4050" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path
-                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                            </path>
-                        </svg>
-                    </a>
+      <div class="tl-item reveal">
+        <div class="tl-when">
+          Feb 2022 — Feb 2023
+          <span class="dur">1 yr</span>
+        </div>
+        <div class="tl-main">
+          <h3 class="tl-role">Junior Developer</h3>
+          <div class="tl-co"><span class="at">@</span> TalkVia · Brisbane · Remote</div>
+          <p class="tl-desc">Built voice and conversational-AI applications across Google Assistant, Alexa, iOS, Android and web for a range of clients.</p>
+          <ul class="tl-points">
+            <li>Built a mobile chatbot app in Flutter, expanding the team's cross-platform capability.</li>
+            <li>Refactored the native chatbot experience, improving usability and client satisfaction.</li>
+            <li>Developed voice apps from client specs across UX/UI updates and extensive QA.</li>
+          </ul>
+          <div class="tl-tags">
+            <span>Flutter</span><span>Voice UI</span><span>Alexa</span><span>Google Assistant</span><span>QA</span>
+          </div>
+        </div>
+      </div>
 
-                    <a href="https://www.instagram.com/isaac.codes/" target="_blank">
-                        <svg class="instagram" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                            viewBox="0 0 24 24" fill="none" stroke="#2D4050" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                        </svg>
-                    </a>
+      <div class="tl-item reveal">
+        <div class="tl-when">
+          2018 — 2021
+          <span class="dur">Pivot</span>
+        </div>
+        <div class="tl-main">
+          <h3 class="tl-role">Marketing → Engineering</h3>
+          <div class="tl-co"><span class="at">@</span> Earlier career · New Zealand</div>
+          <p class="tl-desc">Digital marketing and paid-media roles at Link NZ and Dubzz Digital — managing web operations, SEO and campaigns — before retraining into software engineering via the Treehouse Front End Techdegree.</p>
+          <ul class="tl-points">
+            <li>Grew social reach and website sales managing digital marketing and advertising.</li>
+            <li>Completed the Team Treehouse Front End Web Development Techdegree (2020–21).</li>
+          </ul>
+          <div class="tl-tags">
+            <span>SEO</span><span>Paid Media</span><span>Self-taught</span><span>Treehouse</span>
+          </div>
+        </div>
+      </div>
 
-                    <a href="https://twitter.com/isaac_codes" target="_blank">
-                        <svg class="twitter" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                            viewBox="0 0 24 24" fill="none" stroke="#2D4050" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-                        </svg>
-                    </a>
+    </div>
+  </section>
 
-                    <a href="https://www.facebook.com/isaac.arnold.90" target="_blank">
-                        <svg class="facebook" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                            viewBox="0 0 24 24" fill="none" stroke="#2D4050" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                        </svg>
-                    </a>
+  <!-- ---- PROJECTS ---- -->
+  <section id="projects" class="section-pad wrap">
+    <p class="eyebrow reveal"><span class="num">03</span> / things I've built</p>
+    <h2 class="section-title reveal">Featured projects</h2>
+    <div class="proj-list">
 
-                    <a href="https://www.linkedin.com/in/isaac-arnold-64b54279/" target="_blank">
-                        <svg class="linkedin" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                            viewBox="0 0 24 24" fill="none" stroke="#2D4050" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-                            </path>
-                            <rect x="2" y="9" width="4" height="12"></rect>
-                            <circle cx="4" cy="4" r="2"></circle>
-                        </svg>
-                    </a>
+      <article class="proj reveal" data-project="moonlight" role="button" tabindex="0" aria-label="Open Electronic Moonlight case study">
+        <div class="proj-visual">
+          <span class="proj-glyph" aria-hidden="true">◑</span>
+          <div class="ph"><b>Electronic Moonlight</b>Theme screenshot — editor with syntax highlighting</div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-kicker">
+            Open Source · VS Code Theme
+            <span class="star">
+              <svg viewBox="0 0 24 24" fill="currentColor" style="width:12px;height:12px" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.6 6 20.4l1.4-6.8L2.3 9l6.9-.7L12 2z"/></svg>
+              8
+            </span>
+          </div>
+          <h3>Electronic Moonlight</h3>
+          <p class="proj-tag">A beautifully muted dark theme with subtle vibrance — built for VS Code and ported to iTerm, JetBrains and Xcode.</p>
+          <div class="proj-stack">
+            <span>VS Code API</span><span>JSON</span><span>Python</span><span>iTerm</span><span>JetBrains</span>
+          </div>
+          <div class="proj-links">
+            <span class="proj-open">
+              Case study
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </span>
+            <a class="proj-ext" href="https://github.com/IsaacArnold/electronic-moonlight-theme" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5a10.5 10.5 0 0 0-3.32 20.46c.53.1.72-.23.72-.5v-1.76c-2.92.64-3.54-1.4-3.54-1.4-.48-1.22-1.17-1.54-1.17-1.54-.95-.65.07-.64.07-.64 1.06.07 1.61 1.09 1.61 1.09.94 1.6 2.46 1.14 3.06.87.1-.68.37-1.14.67-1.4-2.33-.27-4.78-1.17-4.78-5.2 0-1.15.41-2.09 1.09-2.83-.11-.27-.47-1.34.1-2.8 0 0 .89-.28 2.91 1.08a10.1 10.1 0 0 1 5.3 0c2.02-1.36 2.9-1.08 2.9-1.08.58 1.46.22 2.53.11 2.8.68.74 1.09 1.68 1.09 2.83 0 4.04-2.46 4.93-4.8 5.19.38.33.71.97.71 1.96v2.9c0 .28.19.61.73.5A10.5 10.5 0 0 0 12 1.5z"/></svg>
+              Code
+            </a>
+            <a class="proj-ext" href="https://marketplace.visualstudio.com/items?itemName=IsaacArnold.electronic-moonlight-theme" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+              VS Marketplace
+            </a>
+          </div>
+        </div>
+      </article>
 
-                </div> <!-- /Socials svgs -->
-            </div> <!-- /Content-wrapper - Contact -->
-        </section> <!-- /Contact section -->
-    </main> <!-- /Main section -->
-    <footer>
-        <!-- Footer -->
-        <p>&copy;Isaac Arnold | 2021</p>
-    </footer> <!-- /Footer -->
+      <article class="proj reveal" data-project="buyourstuff" role="button" tabindex="0" aria-label="Open Buy Our Stuff case study">
+        <div class="proj-visual">
+          <span class="proj-glyph" aria-hidden="true">⌘</span>
+          <div class="ph"><b>Buy Our Stuff</b>Storefront screenshot — product grid &amp; detail pages</div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-kicker">Full-Stack · Headless Commerce</div>
+          <h3>Buy Our Stuff</h3>
+          <p class="proj-tag">A storefront for displaying products for sale — a Gatsby frontend wired to Sanity as a headless CMS for product management.</p>
+          <div class="proj-stack">
+            <span>Gatsby</span><span>React</span><span>Sanity</span><span>GraphQL</span><span>Netlify</span>
+          </div>
+          <div class="proj-links">
+            <span class="proj-open">
+              Case study
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </span>
+            <a class="proj-ext" href="https://github.com/IsaacArnold/buy-our-stuff" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5a10.5 10.5 0 0 0-3.32 20.46c.53.1.72-.23.72-.5v-1.76c-2.92.64-3.54-1.4-3.54-1.4-.48-1.22-1.17-1.54-1.17-1.54-.95-.65.07-.64.07-.64 1.06.07 1.61 1.09 1.61 1.09.94 1.6 2.46 1.14 3.06.87.1-.68.37-1.14.67-1.4-2.33-.27-4.78-1.17-4.78-5.2 0-1.15.41-2.09 1.09-2.83-.11-.27-.47-1.34.1-2.8 0 0 .89-.28 2.91 1.08a10.1 10.1 0 0 1 5.3 0c2.02-1.36 2.9-1.08 2.9-1.08.58 1.46.22 2.53.11 2.8.68.74 1.09 1.68 1.09 2.83 0 4.04-2.46 4.93-4.8 5.19.38.33.71.97.71 1.96v2.9c0 .28.19.61.73.5A10.5 10.5 0 0 0 12 1.5z"/></svg>
+              Code
+            </a>
+            <a class="proj-ext" href="https://goodgoods.netlify.app/" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+              Live demo
+            </a>
+          </div>
+        </div>
+      </article>
 
-    <script src="js/app.js"></script>
+    </div>
+  </section>
 
-    <!-- HTML icon -->
-    <svg xmlns="http://www.w3.org/2000/svg" role="img" style="display:none">
-        <symbol id="html" viewBox="0 0 48 48">
-            <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z" />
-            <path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z" />
-            <path fill="#FFF"
-                d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z" />
-            <path fill="#EEE"
-                d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z" />
-        </symbol>
-    </svg>
-    <!-- /HTML icon -->
-    <!-- CSS icon -->
-    <svg xmlns="http://www.w3.org/2000/svg" role="img" style="display:none">
-        <symbol id="css" viewBox="0 0 48 48">
-            <path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z" />
-            <path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z" />
-            <path fill="#FFF"
-                d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z" />
-            <path fill="#EEE"
-                d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z" />
-        </symbol>
-    </svg>
-    <!-- /CSS icon -->
-    <!-- SASS icon -->
-    <svg xmlns="http://www.w3.org/2000/svg" role="img" style="display:none">
-        <symbol id="sass" viewBox="0 0 48 48">
-            <path fill="#f06292"
-                d="M39.867,25.956c-1.538,0.008-2.87,0.377-3.986,0.928c-0.408-0.815-0.822-1.532-0.891-2.065	c-0.081-0.622-0.175-0.994-0.077-1.735c0.098-0.741,0.527-1.791,0.521-1.87c-0.006-0.079-0.096-0.456-0.983-0.463	c-0.887-0.006-1.646,0.171-1.735,0.405c-0.089,0.234-0.26,0.761-0.366,1.311c-0.155,0.804-1.771,3.673-2.688,5.173	c-0.3-0.586-0.555-1.102-0.608-1.51c-0.081-0.622-0.175-0.994-0.077-1.735c0.098-0.741,0.527-1.791,0.521-1.87	c-0.006-0.079-0.096-0.456-0.983-0.463c-0.887-0.006-1.646,0.171-1.735,0.405c-0.089,0.234-0.185,0.781-0.366,1.311	c-0.182,0.529-2.329,5.314-2.892,6.555c-0.287,0.632-0.536,1.14-0.712,1.486c-0.001-0.001-0.001-0.002-0.001-0.002	s-0.011,0.023-0.029,0.062c-0.151,0.295-0.24,0.458-0.24,0.458s0.001,0.002,0.003,0.006c-0.12,0.217-0.248,0.418-0.311,0.418	c-0.044,0-0.133-0.577,0.019-1.369c0.32-1.66,1.087-4.248,1.08-4.338c-0.004-0.046,0.143-0.497-0.501-0.733	c-0.626-0.229-0.849,0.153-0.906,0.154c-0.055,0.001-0.096,0.135-0.096,0.135s0.697-2.911-1.33-2.911	c-1.268,0-3.024,1.387-3.889,2.644c-0.546,0.298-1.715,0.936-2.954,1.617c-0.476,0.262-0.962,0.529-1.423,0.783	c-0.031-0.035-0.063-0.069-0.095-0.104c-2.459-2.623-7.003-4.478-6.811-8.005c0.07-1.282,0.516-4.658,8.733-8.752	c6.731-3.354,12.12-2.431,13.051-0.386c1.33,2.923-2.88,8.354-9.87,9.138c-2.663,0.299-4.066-0.734-4.415-1.118	c-0.367-0.405-0.422-0.423-0.559-0.347c-0.223,0.124-0.082,0.481,0,0.694c0.209,0.543,1.065,1.506,2.525,1.986	c1.285,0.422,4.412,0.653,8.193-0.81c4.236-1.638,7.543-6.196,6.571-10.005c-0.988-3.874-7.412-5.148-13.492-2.988	C12.44,9.332,8.523,11.35,5.706,13.984c-3.349,3.132-3.883,5.859-3.663,6.998c0.782,4.048,6.361,6.684,8.595,8.637	c-0.11,0.061-0.214,0.118-0.308,0.17c-1.12,0.554-5.373,2.78-6.437,5.131c-1.207,2.667,0.192,4.581,1.118,4.839	c2.869,0.798,5.813-0.638,7.396-2.998c1.582-2.359,1.389-5.432,0.663-6.834c-0.009-0.017-0.019-0.034-0.028-0.052	c0.289-0.171,0.584-0.345,0.876-0.517c0.57-0.335,1.13-0.647,1.615-0.911c-0.272,0.744-0.471,1.637-0.574,2.926	c-0.122,1.514,0.499,3.471,1.311,4.241c0.358,0.339,0.788,0.347,1.06,0.347c0.945,0,1.376-0.786,1.851-1.716	c0.582-1.14,1.099-2.468,1.099-2.468s-0.648,3.586,1.118,3.586c0.644,0,1.291-0.835,1.58-1.26c0.001,0.005,0.001,0.007,0.001,0.007	s0.017-0.028,0.05-0.083c0.067-0.102,0.105-0.167,0.105-0.167s0.001-0.007,0.003-0.019c0.259-0.449,0.833-1.473,1.693-3.162	c1.112-2.182,2.178-4.916,2.178-4.916s0.099,0.668,0.424,1.774c0.191,0.65,0.597,1.369,0.918,2.059	c-0.258,0.358-0.416,0.563-0.416,0.563s0.001,0.004,0.004,0.011c-0.206,0.274-0.437,0.569-0.679,0.857	c-0.878,1.045-1.923,2.239-2.063,2.583c-0.165,0.406-0.126,0.704,0.193,0.945c0.233,0.175,0.647,0.203,1.08,0.174	c0.789-0.053,1.343-0.249,1.617-0.368c0.427-0.151,0.924-0.388,1.39-0.731c0.861-0.633,1.38-1.538,1.33-2.738	c-0.028-0.661-0.238-1.316-0.505-1.934c0.078-0.112,0.156-0.226,0.235-0.34c1.357-1.984,2.41-4.164,2.41-4.164	s0.099,0.668,0.424,1.774c0.164,0.559,0.489,1.17,0.781,1.768c-1.276,1.037-2.067,2.242-2.342,3.032	c-0.508,1.462-0.11,2.124,0.636,2.275c0.338,0.068,0.816-0.087,1.175-0.239c0.447-0.148,0.984-0.395,1.486-0.764	c0.861-0.633,1.689-1.519,1.639-2.718c-0.023-0.546-0.171-1.088-0.372-1.608c1.082-0.451,2.482-0.701,4.266-0.493	c3.827,0.447,4.577,2.836,4.434,3.836c-0.144,1-0.946,1.55-1.215,1.716c-0.268,0.166-0.35,0.224-0.328,0.347	c0.033,0.179,0.157,0.173,0.386,0.134c0.315-0.053,2.009-0.813,2.082-2.659C46.089,28.509,43.844,25.935,39.867,25.956z M10.37,35.9	c-1.268,1.383-3.038,1.905-3.798,1.465c-0.82-0.475-0.495-2.511,1.06-3.979c0.948-0.894,2.172-1.718,2.984-2.225	c0.185-0.111,0.456-0.274,0.786-0.472c0.055-0.031,0.086-0.048,0.086-0.048l-0.001-0.002c0.064-0.038,0.129-0.077,0.196-0.118	C12.25,32.61,11.701,34.449,10.37,35.9z M19.605,29.623c-0.441,1.076-1.365,3.83-1.928,3.682c-0.483-0.127-0.777-2.22-0.096-4.28	c0.342-1.037,1.074-2.276,1.504-2.757c0.692-0.774,1.454-1.027,1.639-0.713C20.959,25.955,19.882,28.948,19.605,29.623z M27.234,33.263c-0.187,0.098-0.359,0.159-0.438,0.112c-0.059-0.035,0.077-0.164,0.077-0.164s0.954-1.027,1.33-1.494	c0.219-0.272,0.472-0.595,0.748-0.955c0.002,0.036,0.003,0.072,0.003,0.107C28.952,32.099,27.764,32.929,27.234,33.263z M33.111,31.923c-0.14-0.099-0.116-0.42,0.343-1.421c0.18-0.393,0.592-1.054,1.306-1.686c0.083,0.26,0.133,0.509,0.132,0.741	C34.883,31.105,33.779,31.683,33.111,31.923z" />
-        </symbol>
-    </svg>
-    <!-- /SASS icon -->
-    <!-- JavaScript Icon -->
-    <svg xmlns="http://www.w3.org/2000/svg" role="img" style="display:none">
-        <symbol id="js" viewBox="0 0 48 48">
-            <path fill="#ffd600" d="M6,42V6h36v36H6z" />
-            <path fill="#000001"
-                d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z" />
-        </symbol>
-    </svg>
-    <!-- /JavaScript Icon -->
-    <!-- React Icon -->
-    <svg xmlns="http://www.w3.org/2000/svg" role="img" style="display:none">
-        <symbol id="react" viewBox="0 0 48 48">
-            <path fill="#00D8FF"
-                d="M24,34C11.1,34,1,29.6,1,24c0-5.6,10.1-10,23-10c12.9,0,23,4.4,23,10C47,29.6,36.9,34,24,34z M24,16	c-12.6,0-21,4.1-21,8c0,3.9,8.4,8,21,8s21-4.1,21-8C45,20.1,36.6,16,24,16z" />
-            <path fill="#00D8FF"
-                d="M15.1,44.6c-1,0-1.8-0.2-2.6-0.7C7.6,41.1,8.9,30.2,15.3,19l0,0c3-5.2,6.7-9.6,10.3-12.4c3.9-3,7.4-3.9,9.8-2.5	c2.5,1.4,3.4,4.9,2.8,9.8c-0.6,4.6-2.6,10-5.6,15.2c-3,5.2-6.7,9.6-10.3,12.4C19.7,43.5,17.2,44.6,15.1,44.6z M32.9,5.4	c-1.6,0-3.7,0.9-6,2.7c-3.4,2.7-6.9,6.9-9.8,11.9l0,0c-6.3,10.9-6.9,20.3-3.6,22.2c1.7,1,4.5,0.1,7.6-2.3c3.4-2.7,6.9-6.9,9.8-11.9	c2.9-5,4.8-10.1,5.4-14.4c0.5-4-0.1-6.8-1.8-7.8C34,5.6,33.5,5.4,32.9,5.4z" />
-            <path fill="#00D8FF"
-                d="M33,44.6c-5,0-12.2-6.1-17.6-15.6C8.9,17.8,7.6,6.9,12.5,4.1l0,0C17.4,1.3,26.2,7.8,32.7,19	c3,5.2,5,10.6,5.6,15.2c0.7,4.9-0.3,8.3-2.8,9.8C34.7,44.4,33.9,44.6,33,44.6z M13.5,5.8c-3.3,1.9-2.7,11.3,3.6,22.2	c6.3,10.9,14.1,16.1,17.4,14.2c1.7-1,2.3-3.8,1.8-7.8c-0.6-4.3-2.5-9.4-5.4-14.4C24.6,9.1,16.8,3.9,13.5,5.8L13.5,5.8z" />
-            <circle cx="24" cy="24" r="4" fill="#00D8FF" />
-        </symbol>
-    </svg>
-    <!-- /React Icon -->
-    <!-- Gatsby Icon -->
-    <svg xmlns="http://www.w3.org/2000/svg" role="img" style="display:none">
-        <symbol id="gatsby" viewBox="0 0 48 48">
-                <path fill="#fff" d="M44,24c0,11.044-8.956,20-20,20S4,35.044,4,24S12.956,4,24,4S44,12.956,44,24z"/>
-                <path fill="#6a1b9a" d="M24,4C13,4,4,13,4,24s9,20,20,20s20-9,20-20S35,4,24,4z M12.856,35.144c-3-3-4.571-7-4.571-10.856	l15.571,15.427C19.856,39.571,15.856,38.143,12.856,35.144L12.856,35.144z M27.427,39.288L8.714,20.571	c1.571-7,7.857-12.286,15.286-12.286c5.286,0,9.856,2.571,12.714,6.429l-2.144,1.856c-2.427-3.285-6.285-5.427-10.571-5.427	c-5.571,0-10.286,3.571-12.144,8.571l16.429,16.429c4.144-1.429,7.286-5,8.286-9.286h-6.856V24h10	c0,7.429-5.286,13.714-12.286,15.286L27.427,39.288z"/>
-        </symbol>
-    </svg>
-    <!-- /Gatsby Icon -->
-    <!-- Figma Icon -->
-    <svg xmlns="http://www.w3.org/2000/svg" role="img" style="display:none">
-        <symbol id="figma" viewBox="0 0 48 48">
-                <path fill="#e64a19" d="M26,17h-8c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h8V17z"/>
-                <path fill="#7c4dff" d="M25,31h-7c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7V31z"/>
-                <path fill="#66bb6a" d="M18,45L18,45c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7v7C25,41.866,21.866,45,18,45z"/>
-                <path fill="#ff7043" d="M32,17h-7V3h7c3.866,0,7,3.134,7,7v0C39,13.866,35.866,17,32,17z"/>
-                <circle cx="32" cy="24" r="7" fill="#29b6f6"/>
-        </symbol>
-    </svg>
-    <!-- /Figma Icon -->
+  <!-- ---- SKILLS ---- -->
+  <section id="skills" class="section-pad wrap">
+    <p class="eyebrow reveal"><span class="num">04</span> / what I work with</p>
+    <h2 class="section-title reveal">Skills &amp; tooling</h2>
+    <div class="skills-grid">
+
+      <div class="skill-card reveal">
+        <div class="skill-head">
+          <span class="skill-ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg>
+          </span>
+          <h3>Languages &amp; Frameworks</h3>
+          <span class="n">01</span>
+        </div>
+        <div class="skill-tags">
+          <span class="hot">JavaScript</span>
+          <span class="hot">TypeScript</span>
+          <span class="hot">React</span>
+          <span>AureliaJS</span>
+          <span>GatsbyJS</span>
+          <span>HTML &amp; CSS</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-head">
+          <span class="skill-ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8"/></svg>
+          </span>
+          <h3>AI &amp; Tooling</h3>
+          <span class="n">02</span>
+        </div>
+        <div class="skill-tags">
+          <span class="hot">Claude Code (daily)</span>
+          <span class="hot">Prompt Engineering</span>
+          <span>AI Workflow Design</span>
+          <span>CLAUDE.md guardrails</span>
+          <span>Reusable Skills</span>
+          <span>BMAD Methodology</span>
+          <span>AI-first Design Systems</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-head">
+          <span class="skill-ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+          </span>
+          <h3>Testing &amp; QA</h3>
+          <span class="n">03</span>
+        </div>
+        <div class="skill-tags">
+          <span>WDIO</span>
+          <span>Component Testing</span>
+          <span>Integration Testing</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-head">
+          <span class="skill-ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 9 5-9 5-9-5 9-5zM3 12l9 5 9-5M3 17l9 5 9-5"/></svg>
+          </span>
+          <h3>Platforms &amp; CMS</h3>
+          <span class="n">04</span>
+        </div>
+        <div class="skill-tags">
+          <span>Adobe AEM</span>
+          <span>Contentful (headless)</span>
+          <span>Sanity</span>
+          <span>Jira · Agile / Scrum</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ---- CONTACT ---- -->
+  <section id="contact" class="section-pad wrap contact">
+    <div class="contact-card reveal">
+      <p class="eyebrow" style="justify-content:center"><span class="num">05</span> / say hello</p>
+      <h2>Let's build <span class="grad-text">something</span>.</h2>
+      <p>Whether it's a role, a collaboration, or you just want to talk shop about AI-assisted engineering — drop me a line below.</p>
+      <form class="cform" id="contact-form" novalidate>
+        <div class="cform-row">
+          <div class="cfield" id="cfield-name">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="name" autocomplete="name" placeholder="Jane Developer" />
+            <span class="cmsg" id="cf-name-err" role="alert"></span>
+          </div>
+          <div class="cfield" id="cfield-email">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" autocomplete="email" placeholder="you@company.com" />
+            <span class="cmsg" id="cf-email-err" role="alert"></span>
+          </div>
+        </div>
+        <div class="cfield" id="cfield-message">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="5" placeholder="Tell me about the role, project, or idea…"></textarea>
+          <span class="cmsg" id="cf-message-err" role="alert"></span>
+        </div>
+        <!-- honeypot: hidden from humans, traps bots -->
+        <input type="text" name="company_website" tabindex="-1" autocomplete="off" class="cform-hp" aria-hidden="true" />
+        <button class="cform-submit" type="submit" id="cf-submit">
+          Send message →
+        </button>
+        <p class="cform-err-line" id="cf-err-line" role="alert" hidden>
+          Something went wrong sending that. Mind trying again, or reach me on
+          <a href="https://www.linkedin.com/in/isaac-arnold-64b54279/" target="_blank" rel="noreferrer">LinkedIn</a>?
+        </p>
+      </form>
+
+      <div class="cform-success" id="cf-success" role="status" aria-live="polite" hidden>
+        <span class="cform-check" id="cf-check-icon" aria-hidden="true"></span>
+        <h3>Message sent — thank you!</h3>
+        <p>I'll get back to you as soon as I can. Talk soon.</p>
+        <button class="btn btn-ghost" id="cf-send-another">Send another</button>
+      </div>
+      <div class="socials">
+        <a href="https://github.com/IsaacArnold" target="_blank" rel="noreferrer" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5a10.5 10.5 0 0 0-3.32 20.46c.53.1.72-.23.72-.5v-1.76c-2.92.64-3.54-1.4-3.54-1.4-.48-1.22-1.17-1.54-1.17-1.54-.95-.65.07-.64.07-.64 1.06.07 1.61 1.09 1.61 1.09.94 1.6 2.46 1.14 3.06.87.1-.68.37-1.14.67-1.4-2.33-.27-4.78-1.17-4.78-5.2 0-1.15.41-2.09 1.09-2.83-.11-.27-.47-1.34.1-2.8 0 0 .89-.28 2.91 1.08a10.1 10.1 0 0 1 5.3 0c2.02-1.36 2.9-1.08 2.9-1.08.58 1.46.22 2.53.11 2.8.68.74 1.09 1.68 1.09 2.83 0 4.04-2.46 4.93-4.8 5.19.38.33.71.97.71 1.96v2.9c0 .28.19.61.73.5A10.5 10.5 0 0 0 12 1.5z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/isaac-arnold-64b54279/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/isaac.codes/" target="_blank" rel="noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" stroke="none"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================================
+     Footer
+     ============================================================ -->
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <span>© 2026 Isaac Arnold · Built in Brisbane <span class="hand">left-handed</span> ✦</span>
+    <span>Designed &amp; built with care — and a little Claude Code.</span>
+  </div>
+</footer>
+
+<!-- Project detail overlay (injected by JS) -->
+<div id="detail-root"></div>
+
+<!-- Terminal mode (injected by JS) -->
+<div id="terminal-root"></div>
+
+<script src="js/app.js"></script>
 </body>
-
 </html>
