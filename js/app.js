@@ -1,5 +1,5 @@
 // ============================================================
-// Isaac Arnold Portfolio — app.js
+// Isaac Arnold Portfolio - app.js
 // Theme · Nav · Reveal on scroll · Project detail · Terminal mode
 // ============================================================
 
@@ -14,7 +14,7 @@ const SVG = {
 };
 
 // ---- Web3Forms access key ----
-const WEB3FORMS_KEY = 'PASTE-YOUR-KEY-HERE'; // from web3forms.com dashboard
+const WEB3FORMS_KEY = 'fa679ad5-5fdb-4843-ac92-79e72cd66f25';
 
 // ---- Utility ----
 function esc(str) {
@@ -75,8 +75,8 @@ const PROJECTS = {
   moonlight: {
     kicker: 'Open Source · VS Code Theme',
     name: 'Electronic Moonlight',
-    tag: 'A beautifully muted dark theme with subtle vibrance — built for VS Code and ported to iTerm, JetBrains and Xcode.',
-    ph: 'Theme screenshot — editor with syntax highlighting',
+    tag: 'A beautifully muted dark theme with subtle vibrance - built for VS Code and ported to iTerm, JetBrains and Xcode.',
+    ph: 'Theme screenshot - editor with syntax highlighting',
     href: 'https://github.com/IsaacArnold/electronic-moonlight-theme',
     live: 'https://marketplace.visualstudio.com/items?itemName=IsaacArnold.electronic-moonlight-theme',
     liveLabel: 'VS Marketplace',
@@ -99,13 +99,13 @@ const PROJECTS = {
   buyourstuff: {
     kicker: 'Full-Stack · Headless Commerce',
     name: 'Buy Our Stuff',
-    tag: 'A storefront for displaying products for sale — a Gatsby frontend wired to Sanity as a headless CMS for product management.',
-    ph: 'Storefront screenshot — product grid &amp; detail pages',
+    tag: 'A storefront for displaying products for sale - a Gatsby frontend wired to Sanity as a headless CMS for product management.',
+    ph: 'Storefront screenshot - product grid &amp; detail pages',
     href: 'https://github.com/IsaacArnold/buy-our-stuff',
     live: 'https://goodgoods.netlify.app/',
     liveLabel: 'Live demo',
     overview: 'Buy Our Stuff is an e-commerce build exploring the headless-CMS pattern: a fast, statically-generated Gatsby storefront that pulls product data from Sanity over GraphQL, so non-technical editors can manage the catalogue without touching code.',
-    role: 'Built end-to-end — modelled the Sanity content schema, set up the Gatsby data layer and GraphQL queries, built the storefront UI and product pages, and deployed to Netlify.',
+    role: 'Built end-to-end - modelled the Sanity content schema, set up the Gatsby data layer and GraphQL queries, built the storefront UI and product pages, and deployed to Netlify.',
     meta: [
       { k: 'Type', v: 'Headless e-commerce' },
       { k: 'Frontend', v: 'Gatsby + React' },
@@ -113,7 +113,7 @@ const PROJECTS = {
       { k: 'Hosting', v: 'Netlify' },
     ],
     highlights: [
-      'Decoupled architecture — editors manage products in Sanity Studio.',
+      'Decoupled architecture - editors manage products in Sanity Studio.',
       'GraphQL data layer feeding statically-generated product pages.',
       'Fast, CDN-served storefront deployed continuously to Netlify.',
       'Demonstrates the modern Jamstack / headless content pattern.',
@@ -219,13 +219,13 @@ function initProjects() {
 // ---- Terminal mode data ----
 const TM_DATA = {
   experience: [
-    { role: 'Software Engineer', company: 'The Lottery Corporation', at: 'Brisbane', when: 'Mar 2023', end: 'Present', desc: 'Drive feature delivery, emerging API work, and AI-first engineering practices across customer-facing products and internal platform work — shaping how the team builds software.', tags: ['React', 'AureliaJS', 'AEM', 'Contentful', 'Claude Code', 'API'] },
+    { role: 'Software Engineer', company: 'The Lottery Corporation', at: 'Brisbane', when: 'Mar 2023', end: 'Present', desc: 'Drive feature delivery, emerging API work, and AI-first engineering practices across customer-facing products and internal platform work - shaping how the team builds software.', tags: ['React', 'AureliaJS', 'AEM', 'Contentful', 'Claude Code', 'API'] },
     { role: 'Junior Developer', company: 'TalkVia', at: 'Brisbane · Remote', when: 'Feb 2022', end: 'Feb 2023', desc: 'Built voice and conversational-AI applications across Google Assistant, Alexa, iOS, Android and web for a range of clients.', tags: ['Flutter', 'Voice UI', 'Alexa', 'Google Assistant', 'QA'] },
-    { role: 'Marketing → Engineering', company: 'Earlier career', at: 'New Zealand', when: '2018', end: '2021', desc: 'Digital marketing and paid-media roles at Link NZ and Dubzz Digital — managing web operations, SEO and campaigns — before retraining into software engineering via the Treehouse Front End Techdegree.', tags: ['SEO', 'Paid Media', 'Self-taught', 'Treehouse'] },
+    { role: 'Marketing → Engineering', company: 'Earlier career', at: 'New Zealand', when: '2018', end: '2021', desc: 'Digital marketing and paid-media roles at Link NZ and Dubzz Digital - managing web operations, SEO and campaigns - before retraining into software engineering via the Treehouse Front End Techdegree.', tags: ['SEO', 'Paid Media', 'Self-taught', 'Treehouse'] },
   ],
   projects: [
-    { glyph: '◑', name: 'Electronic Moonlight', stars: '8', tag: 'A beautifully muted dark theme with subtle vibrance — built for VS Code and ported to iTerm, JetBrains and Xcode.', stack: ['VS Code API', 'JSON', 'Python', 'iTerm', 'JetBrains'], href: 'https://github.com/IsaacArnold/electronic-moonlight-theme', live: 'https://marketplace.visualstudio.com/items?itemName=IsaacArnold.electronic-moonlight-theme', liveLabel: 'VS Marketplace' },
-    { glyph: '⌘', name: 'Buy Our Stuff', tag: 'A storefront for displaying products for sale — a Gatsby frontend wired to Sanity as a headless CMS for product management.', stack: ['Gatsby', 'React', 'Sanity', 'GraphQL', 'Netlify'], href: 'https://github.com/IsaacArnold/buy-our-stuff', live: 'https://goodgoods.netlify.app/', liveLabel: 'Live demo' },
+    { glyph: '◑', name: 'Electronic Moonlight', stars: '8', tag: 'A beautifully muted dark theme with subtle vibrance - built for VS Code and ported to iTerm, JetBrains and Xcode.', stack: ['VS Code API', 'JSON', 'Python', 'iTerm', 'JetBrains'], href: 'https://github.com/IsaacArnold/electronic-moonlight-theme', live: 'https://marketplace.visualstudio.com/items?itemName=IsaacArnold.electronic-moonlight-theme', liveLabel: 'VS Marketplace' },
+    { glyph: '⌘', name: 'Buy Our Stuff', tag: 'A storefront for displaying products for sale - a Gatsby frontend wired to Sanity as a headless CMS for product management.', stack: ['Gatsby', 'React', 'Sanity', 'GraphQL', 'Netlify'], href: 'https://github.com/IsaacArnold/buy-our-stuff', live: 'https://goodgoods.netlify.app/', liveLabel: 'Live demo' },
   ],
   skills: [
     { title: 'Languages & Frameworks', tags: ['JavaScript', 'TypeScript', 'React', 'AureliaJS', 'GatsbyJS', 'HTML & CSS'] },
@@ -256,7 +256,7 @@ function openTerminal() {
           <span class="spark">ia</span>
           <b>isaac.dev</b><span class="v">v2026.6 · interactive shell</span>
         </div>
-        <p>Welcome — you're talking to Isaac's portfolio in terminal mode. Ask away, or run a command.</p>
+        <p>Welcome - you're talking to Isaac's portfolio in terminal mode. Ask away, or run a command.</p>
         <p class="hint">Try <code>about</code>, <code>projects</code>, <code>skills</code>, <code>experience</code>, <code>contact</code> · <code>help</code> for everything · <code>gui</code> to switch to the visual site.</p>
       </div>`,
 
@@ -273,8 +273,8 @@ function openTerminal() {
         ${tool('cat', 'about.md')}
         <span class="tm-h">Isaac Arnold</span>
         <p><span class="tm-key">role</span> = <span class="tm-str">"Software Engineer · AI-Assisted Development"</span></p>
-        <p><span class="tm-key">location</span> = <span class="tm-str">"Brisbane, Australia"</span> <span class="tm-faint">🤚 left-handed</span></p>
-        <p>Software engineer working across frontend, an emerging API layer and a frontend design system at <span class="tm-cyan">The Lottery Corporation</span> — while driving the AI-first engineering practices the team builds with.</p>
+        <p><span class="tm-key">location</span> = <span class="tm-str">"Brisbane, Australia"</span></p>
+        <p>Software engineer working across frontend, an emerging API layer and a frontend design system at <span class="tm-cyan">The Lottery Corporation</span> - while driving the AI-first engineering practices the team builds with.</p>
         <p>Pivoted into tech from digital marketing, retrained via the Treehouse Front End Techdegree, and now obsess over making speed and code quality coexist.</p>
         <p class="tm-dim">off-clock: <span class="tm-yellow">⛳ golf</span> · <span class="tm-yellow">☕ coffee</span> · <span class="tm-yellow">🎵 vinyl</span> · <span class="tm-yellow">🎮 games</span></p>
       </div>`,
@@ -284,7 +284,7 @@ function openTerminal() {
         ${tool('cat', 'experience.log')}
         ${TM_DATA.experience.map(e => `
           <div class="tm-card">
-            <div class="ct">${esc(e.role)} <span class="star">${esc(e.when)} — ${esc(e.end)}</span></div>
+            <div class="ct">${esc(e.role)} <span class="star">${esc(e.when)} - ${esc(e.end)}</span></div>
             <p class="tm-cyan">@ ${esc(e.company)} · ${esc(e.at)}</p>
             <p>${esc(e.desc)}</p>
             <p class="tm-faint">${e.tags.map(esc).join(' · ')}</p>
@@ -325,7 +325,7 @@ function openTerminal() {
     contact: () => `
       <div class="tm-resp">
         ${tool('open', 'contact')}
-        <p>Inbox is open — use the <b>contact form</b> on the site (run <span class="tm-violet">gui</span> to switch), or find me here:</p>
+        <p>Inbox is open - use the <b>contact form</b> on the site (run <span class="tm-violet">gui</span> to switch), or find me here:</p>
         <p><span class="tm-violet">github&nbsp;&nbsp;&nbsp;</span> <a href="https://github.com/IsaacArnold" target="_blank" rel="noreferrer">github.com/IsaacArnold</a></p>
         <p><span class="tm-violet">linkedin&nbsp;</span> <a href="https://www.linkedin.com/in/isaac-arnold-64b54279/" target="_blank" rel="noreferrer">in/isaac-arnold</a></p>
         <p><span class="tm-violet">instagram</span> <a href="https://www.instagram.com/isaac.codes/" target="_blank" rel="noreferrer">@isaac.codes</a></p>
@@ -384,7 +384,7 @@ function openTerminal() {
       <div class="term-win">
         <div class="term-bar">
           <span class="dots"><i></i><i></i><i></i></span>
-          <span class="title"><b>isaac@brisbane</b>: ~/portfolio — zsh</span>
+          <span class="title"><b>isaac@brisbane</b>: ~/portfolio - zsh</span>
           <button class="term-exit" id="term-exit-btn">${SVG.close} exit to site</button>
         </div>
         <div class="term-screen" id="term-screen"></div>
@@ -530,7 +530,7 @@ function initContactForm() {
 
   form.addEventListener('submit', async (ev) => {
     ev.preventDefault();
-    if (honeypot.value) return; // bot — silently drop
+    if (honeypot.value) return; // bot - silently drop
     if (!validate()) return;
 
     setStatus('sending');

@@ -138,6 +138,8 @@
 }
 
 /* Success state */
+.cform-success[hidden] { display: none; }
+
 .cform-success {
   max-width: 540px;
   margin: 28px auto 0;
